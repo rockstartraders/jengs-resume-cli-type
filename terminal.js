@@ -148,15 +148,13 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
         case 'time':
           var result = currentDate = new Date();
-          var resulta = "<p>The Date and Time as well as your Timezone is : </p>";
+          var resulta = "The Date and Time as well as your Timezone is :" + "<br>";
 		      output(resulta + result);
 		    break;
 
         case 'resume':
-          var result = "<p>My apoligies but I\'m not comfortable in providing my personal information specially online.</p>";
-          var resultb = "<p>But please feel free to email or contact me by typing the command \t'contact \t'.</p>";
-          var resultbb = "<p>And I will be glad to respond back to you and have my resume sent out when that happens.</p>";
-          output(result + resultb + resultbb);
+          var result = " My apoligies but I\'m not comfortable in providing my personal information specially online." + "<br>" + "But please feel free to email or contact me by typing the command \t'contact \t'." + "<br>" + "And I will be glad to respond back to you and have my resume sent out when that happens.";
+          output(result);
         break;
 
         default:
