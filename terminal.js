@@ -153,9 +153,10 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 		    break;
 
         case 'resume':
-          var result = " My apoligies but I\'m not comfortable in providing my personal information specially online." + "<br>" + "But please feel free to email or contact me by typing the command \t'contact \t'." + "<br>" + "And I will be glad to respond back to you and have my resume sent out when that happens.";
+          var result = " My apoligies but I\'m not comfortable in providing my personal information specially online." + "<br>" + "But please feel free to email or contact me by typing the command  \t' contact ' . \t" + "<br>" + "And I will be glad to respond back to you and have my resume sent out when that happens.";
           output(result);
         break;
+
 
         default:
           if (cmd) {
