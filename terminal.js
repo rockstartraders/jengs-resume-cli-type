@@ -141,10 +141,10 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           output(result);
           break;
 
-		    case 'github':
+		  case 'github':
           var result = window.open('https://github.com/rockstartraders');
-		      output(" Thank You So Much For Visiting My Github Page." + "<br>" + "Hope You Like It.");
-		    break;
+		  output(" Thank You So Much For Visiting My Github Page." + "<br>" + "Hope You Like It.");
+		  break;
 
         case 'time':
           var result = currentDate = new Date();
@@ -156,6 +156,11 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           var result = " My apoligies but I\'m not comfortable in providing my personal information specially online." + "<br>" + "But please feel free to email or contact me by typing the command  \t' contact ' . \t" + "<br>" + "And I will be glad to respond back to you and have my resume sent out when that happens.";
           output(result);
         break;
+		
+		case 'mail':
+          var result = window.open('https://rockstartraders.github.io/james-cli-contact/contact.html');
+		  output(" Thank You So Much For Visiting My Contact Page." + "<br>" + "I will try to get back to you as soon as I can.");
+		  break;
 
 
         default:
