@@ -98,16 +98,18 @@ body {
 
   color:#fff;
   padding-top:130px;
+  font-size: 55px;
 
 }
 
 
-* { color:#fff; text-decoration: none;}
+* { color:#fff; text-decoration: none; font-family: IBM Plex Serif,Lucida Console,Inconsolata, monospace; font-weight: bold;}
 
 
 
 #sulat{
 	text-align:center;
-	font-size:18pt;
+	font-size:16px;
+	
 
 	}
