@@ -130,10 +130,8 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           break;
 
         case 'contact':
-          var result = "<h3>Contact</h3>";
-          var result1 = "<h3>Contact</h3>";
-          var result2 = "<h3>Contact</h3>";
-          output(result + result1 + result2);
+          var result = "<h1 style=text-align:center;>Contact</h1><p>My bad, but I decided to remove my contact information here. Due to the reason that I received tons of spam emails and multi-level marketing proposal in the past which I'm not really interested with. Please feel free to send me an email using the contact form that I created for this purpose.<br>Please type the command \"<span style=color:#32CD32;>mail</span>\" to get to that page.<br><br>Thank You.</p> ";
+          output(result);
           break;
 
         case 'whoami':
@@ -153,7 +151,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 		    break;
 
         case 'resume':
-          var result = " My apoligies but I\'m not comfortable in providing my personal information specially online." + "<br>" + "But please feel free to email or contact me by typing the command  \t' contact ' . \t" + "<br>" + "And I will be glad to respond back to you and have my resume sent out when that happens.";
+          var result = " My apoligies but I\'m not comfortable in providing my personal information specially online." + "<br>" + "But please feel free to email or contact me by typing the command  \t' mail ' . \t" + "<br>" + "And I will be glad to respond back to you and have my resume sent out when that happens.";
           output(result);
         break;
 		

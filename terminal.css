@@ -9,11 +9,12 @@ html, body {
 
 }
 body {
-  font-size: 14pt;
-  font-family: 'guru_meditation_nbpregular',Lucida Console,Inconsolata, monospace;
+  font-size: 15pt;
+  font-family: 'White Rabbit',Lucida Console,Inconsolata, monospace;
   color: white;
   background-color: #300A24;
   font-weight: bolder;
+  line-height: 1.2;
 
 }
 #container {
@@ -103,23 +104,23 @@ body {
 }
 
 
-* { color:#fff; text-decoration: none; font-family: 'guru_meditation_nbpregular',Lucida Console,Inconsolata, monospace; font-weight: bold;}
+* { color:#fff; text-decoration: none; font-family: 'White Rabbit',Lucida Console,Inconsolata, monospace; font-weight: bold;}
 
 
 
 #sulat{
 	text-align:center;
 	font-size:16px;
-	font-family: 'guru_meditation_nbpregular';
+	font-family: 'White Rabbit';
 
 	}
 	
 	
 @font-face {
-    font-family: 'guru_meditation_nbpregular';
-    src: url('guru0-webfont.woff2') format('woff2'),
-         url('guru0-webfont.woff') format('woff');
+    font-family: 'White Rabbit';
+    src: url('WhiteRabbit.woff2') format('woff2'),
+        url('WhiteRabbit.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
-}	
+	letter-spacing: 4px;
+}
