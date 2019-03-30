@@ -157,7 +157,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 		
 		case 'mail':
           var result = window.open('https://rockstartraders.github.io/james-cli-contact/contact.html');
-		  output(" Thank You So Much For Visiting My Contact Page." + "<br>" + "I will try to get back to you as soon as I can.");
+		  output("<h1 style=text-align:center;>mail</h1><br>New Tab Session .. <br>Thank you so much for visiting my \"<span style=color:#32CD32;>mail</span>\" page.<br>I will try to get back to you as soon as I can.");
 		  break;
 
 
