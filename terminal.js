@@ -115,7 +115,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           break;
 
         case 'education':
-          var result = "<h3>Education:</h3>";
+          var result = "<h3 style=text-align:center;>Education:</h3>";
           output(result);
           break;
 
