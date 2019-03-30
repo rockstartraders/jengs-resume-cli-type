@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Quango';
+    src: url('Quango.woff2') format('woff2'),
+        url('Quango.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+}
+

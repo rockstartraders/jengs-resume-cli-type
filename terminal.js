@@ -110,32 +110,32 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
 
         case 'help':
-          var result = "<h2>Help</h2><p><b>whoami</b>: display all my information.<br><b>education</b>: display all my information about my education.<br><b>programming</b>: display all my information about my achievements in programming.<br><b>interests</b>: display all my interests.<br><b>contact</b>: Say hi<br><b>clear</b>: clear terminal<br><b>help</b>: display this menu.</p>";
+          var result = "<h1 style=text-align:center;>Help</h1><p><b>whoami</b>: display all my information.<br><b>education</b>: display all my information about my education.<br><b>programming</b>: display all my information about my achievements in programming.<br><b>interests</b>: display all my interests.<br><b>contact</b>: Say hi<br><b>clear</b>: clear terminal<br><b>help</b>: display this menu.</p>";
           output(result);
           break;
 
         case 'education':
-          var result = "<h3 style=text-align:center;>Education:</h3>";
+          var result = "<h1 style=text-align:center;>Education</h1>";
           output(result);
           break;
 
         case 'programming':
-          var result = "<h3>Competitive Programmer</h3>";
+          var result = "<h1 style=text-align:center;>Competitive Programmer</h1>";
           output(result);
           break;
 
         case 'interests':
-          var result = "<h3>Interests</h3>";
+          var result = "<h1 style=text-align:center;>Interests</h1>";
           output(result);
           break;
 
         case 'contact':
-          var result = "<h1 style=text-align:center;>Contact</h1><p>My bad, but I decided to remove my contact information here. Due to the reason that I received tons of spam emails and multi-level marketing proposal in the past which I'm not really interested with. Please feel free to send me an email using the contact form that I created for this purpose.<br>Please type the command \"<span style=color:#32CD32;>mail</span>\" to get to that page.<br><br>Thank You.</p> ";
+          var result = "<h1 style=text-align:center;>Contact</h1><p>My bad, but I decided to remove my contact information here. Due to the reason that I received tons of spam emails and multi-level marketing proposal in the past which I'm not really interested in. Please feel free to send me an email using the contact form that I created for this purpose.<br>Please type the command \"<span style=color:#32CD32;>mail</span>\" to get to that page.<br><br>Thank You.</p> ";
           output(result);
           break;
 
         case 'whoami':
-          var result = "<h1>James Paul Espeña</h1>";
+          var result = "<h1 style=text-align:center;>James Paul Espeña</h1>";
           output(result);
           break;
 
