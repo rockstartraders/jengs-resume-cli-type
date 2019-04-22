@@ -122,8 +122,8 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
         case 'programming':
         var coding = '<br><br><center><i class="fas fa-terminal fa-5x"></i></center><br>';
-        var result = (function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<0 2=1-3:4;>6 5</0>',7,7,'h1|text|style|align|center|Programmer|Competitive'.split('|'),0,{}));
-        output(coding + result);
+        var coding1 = '<center><p style="font-size:5vw";>Programming</p></center><br>';
+        output(coding + coding1);
         break;
 
         case 'interests':
@@ -133,8 +133,9 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
         case 'contact':
          var libro = '<br><br><center><i class="fas fa-mobile-alt fa-5x"></i></center><br>';
-         var result = "<h1 style=text-align:center;>Contact</h1><br><p>My bad, but I decided to remove my contact information here. Due to the reason that I received tons of spam emails and multi-level marketing proposal in the past which I'm not really interested in. Please feel free to send me an email using the contact form that I created for this purpose.<br>Please type the command \"<span style=color:#32CD32;>mail</span>\" to get to that page.<br><br>Thank You.</p> ";
-         output(libro + result);
+         var libro1 = '<center><p style="font-size:5vw";>Contact</p></center><br>';
+         var result = "<p>My bad, but I decided to remove my contact information here. Due to the reason that I received tons of spam emails and multi-level marketing proposal in the past which I'm not really interested in. Please feel free to send me an email using the contact form that I created for this purpose.<br>Please type the command \"<span style=color:#32CD32;>mail</span>\" to get to that page.<br><br>Thank You.</p><br> ";
+         output(libro + libro1 + result);
          break;
 
         case 'whoami':
@@ -146,7 +147,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'github':
         var result = window.open('https://github.com/rockstartraders');
         var result1 = '<br><center><i class="fab fa-github-alt fa-5x"></i></center>';
-        var result2 = '<center><p style="font-size:50px";>Github</p></center><br><br>';
+        var result2 = '<center><p style="font-size:5vw";>Github</p></center><br>';
  		    output(result1 + result2 + "Thank You So Much For Visiting My Github Page." + "<br>" + "Hope You Like It.");
  		    break;
 
@@ -157,14 +158,17 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         break;
 
         case 'resume':
-        var result = eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('i h,&0 g I\'m f j k p 4 o n e q.<2>a 7 5 9 1 d b c 8 6 l H G&0"<3 r=E:#D;>J</3>"&0 K I<2>M L C 1 B v 1 u t s 4 w x A z y F.',49,49,'nbsp|to|br|span|my|feel|by|please|me|free|But|or|contact|email|especially|not|but|apologies|My|comfortable|in|typing||information|personal|providing|online|style|have|and|you|back|resume|sent|that|when|out|respond|glad|32CD32|color|happens|command|the||mail|And|be|will'.split('|'),0,{}));
-        output(result);
+        var profile = '<br><center><i class="fas fa-user-tie fa-5x"></i></center>';
+        var biodata = '<center><p style="font-size:5vw";>Resume</p></center><br>';
+        var result = "My apoligies but I\'m not comfortable in providing my personal information specially online." + "<br>" + "But please feel free to email or contact me by typing the command  \t' mail ' . \t" + "<br>" + "And I will be glad to respond back to you and have my resume sent out when that happens.<br><br>";
+        output( profile + biodata + result);
         break;
 
         case 'mail':
         var result = window.open('https://rockstartraders.github.io/james-cli-contact/contact.html');
         var result9 = '<br><br><center><i class="fa fa-mail-bulk fa-5x"></i></center><br>';
-        output( result9 + "<h1 style=text-align:center;>mail</h1><br>New Tab Session .. <br>Thank you so much for visiting my \"<span style=color:#32CD32;>mail</span>\" page.<br>I will try to get back to you as soon as I can.");
+        var sulat = '<center><p style="font-size:5vw";>Mail</p></center><br>';
+        output( result9 + sulat + "New Tab Session .. <br>Thank you so much for visiting my \"<span style=color:#32CD32;>mail</span>\" page.<br>I will try to get back to you as soon as I can.");
   		  break;
 
 
