@@ -110,9 +110,10 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
 
         case 'help':
-        var result = (function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<0 2=1-3:4;>5</0><6>',7,7,'h1|text|style|align|center|Help|br'.split('|'),0,{}));
+        var help0 = '<br><center><i class="far fa-question-circle fa-5x"></i></center>';
+        var help1 = '<center><p style="font-size:5vw";>Help</p></center><br>';
         var result1 = (function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<0 3=2:#5;><b>j</0>:</b>&4 7 8 6 9.<1><0 3=2:#5;><b>d</0>:</b>&4 7 8 6 9 f 6 d.<1><0 3=2:#5;><b>a</0>:</b>&4 7 8 6 a.<1><0 3=2:#5;><b>i</0>:</b>&4 h g<1><0 3=2:#5;><b>e</0>:</b>&4 e o<1><0 3=2:#5;><b>p</0>:</b>&4 7 n k.<1><0 3=2:#5;><b>c</0>:</b>&4 7 8 6 9 f 6 l m c.<1>',26,26,'span|br|color|style|nbsp|32CD32|my|display|all|information|interests||programming|education|clear|about|hello|Say|contact|whoami|menu|achievements|in|this|terminal|help'.split('|'),0,{}));
-        output(result + result1);
+        output(help0 + help1 + result1);
         break;
 
         case 'education':
