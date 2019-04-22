@@ -121,8 +121,9 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         break;
 
         case 'programming':
+        var coding = '<br><br><center><i class="fas fa-terminal fa-5x"></i></center><br>';
         var result = (function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<0 2=1-3:4;>6 5</0>',7,7,'h1|text|style|align|center|Programmer|Competitive'.split('|'),0,{}));
-        output(result);
+        output(coding + result);
         break;
 
         case 'interests':
@@ -131,23 +132,27 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         break;
 
         case 'contact':
-        var result = (function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<4 5=u-t:s;>q</4><p>r v, w I B 0 o z 6 x y. C 0 1 i 3 I f d c b h l j-k n g 9 1 e A I\'m U T S 9. 7 D V 0 W 10 Z Y X 1 6 Q 3 I H G F E.<2>7 J 1 K &a"<8 5=O:#N;>M</8>"&a 0 L 0 3 11.<2><2>P R.</p>',62,64,'to|the|br|that|h1|style|contact|Please|span|in|nbsp|spam|of|tons|past|received|proposals|emails|reason|multi|level|and||marketing|remove||Contact|My|center|align|text|bad|but|information|here|my|which|decided|Due|feel|purpose|this|for|created||type|command|get|mail|32CD32|color|Thank|form|You|interested|really|not|free|send|using|email|an|me|page'.split('|'),0,{}));
-        output(result);
-        break;
+         var libro = '<br><br><center><i class="fas fa-mobile-alt fa-5x"></i></center><br>';
+         var result = "<h1 style=text-align:center;>Contact</h1><br><p>My bad, but I decided to remove my contact information here. Due to the reason that I received tons of spam emails and multi-level marketing proposal in the past which I'm not really interested in. Please feel free to send me an email using the contact form that I created for this purpose.<br>Please type the command \"<span style=color:#32CD32;>mail</span>\" to get to that page.<br><br>Thank You.</p> ";
+         output(libro + result);
+         break;
 
         case 'whoami':
+        var pagkakakilanlan = '<br><br><center><i class="far fa-id-card fa-5x"></i></center><br>';
         var result = (function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<0 3=2-1:4;>5 8 7ñ6</0>',9,9,'h1|align|text|style|center|James|a|Espe|Paul'.split('|'),0,{}));
-        output(result);
+        output(pagkakakilanlan + result);
         break;
 
         case 'github':
         var result = window.open('https://github.com/rockstartraders');
-        output (function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('3 2 1 0 4 5 8 7 6.<9>',10,10,'Much|So|You|Thank|For|Visiting|Page|Github|My|br'.split('|'),0,{}));
-        break;
+        var result1 = '<br><center><i class="fab fa-github-alt fa-5x"></i></center>';
+        var result2 = '<center><p style="font-size:50px";>Github</p></center><br><br>';
+ 		    output(result1 + result2 + "Thank You So Much For Visiting My Github Page." + "<br>" + "Hope You Like It.");
+ 		    break;
 
         case 'time':
         var result = currentDate = new Date();
-        var resulta = (function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<1 5=6-4:3;>0</1>7 e 8 0 2 c 2 b 9 a:<d>',15,15,'Time|h1|as|center|align|style|text|The|and|Timezone|is|your|well|br|Date'.split('|'),0,{}));
+        var resulta = "The Date and Time as well as your Timezone is :" + "<br>";
         output(resulta + result);
         break;
 
@@ -158,15 +163,16 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
         case 'mail':
         var result = window.open('https://rockstartraders.github.io/james-cli-contact/contact.html');
-        output (function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<2 1=e-d:f;>4</2><0>c h i .. <0>b 6 a 9 g u q "<3 1=r:#j;>4</3>"&t p.<0>7 o k 5 l m 5 6 8 n 8 7 s.',31,31,'br|style|h1|span|mail|to|you|I|as|much|so|Thank|New|align|text|center|for|Tab|Session|32CD32|try|get|back|soon|will|page|my|color|can|nbsp|visiting'.split('|'),0,{}));
-        break;
+        var result9 = '<br><br><center><i class="fa fa-mail-bulk fa-5x"></i></center><br>';
+        output( result9 + "<h1 style=text-align:center;>mail</h1><br>New Tab Session .. <br>Thank you so much for visiting my \"<span style=color:#32CD32;>mail</span>\" page.<br>I will try to get back to you as soon as I can.");
+  		  break;
 
 
         //
 
         case 'y':
 
-        var result = "Wala pa";
+        var result = '';
         output(result);
         break;
 
