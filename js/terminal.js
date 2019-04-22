@@ -117,12 +117,13 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         break;
 
         case 'education':
-        var result = (function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<0 1=2-5:3;>4</0>',6,6,'h1|style|text|center|Education|align'.split('|'),0,{}));
-        output(result);
+        var education = '<br><center><i class="fas fa-user-graduate fa-5x"></i></center>';
+        var education1 = '<center><p style="font-size:5vw";>Education</p></center><br>';
+        output(education + education1 );
         break;
 
         case 'programming':
-        var coding = '<br><br><center><i class="fas fa-terminal fa-5x"></i></center><br>';
+        var coding = '<br><br><center><i class="fas fa-terminal fa-5x"></i></center>';
         var coding1 = '<center><p style="font-size:5vw";>Programming</p></center><br>';
         output(coding + coding1);
         break;
@@ -133,14 +134,14 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         break;
 
         case 'contact':
-         var libro = '<br><br><center><i class="fas fa-mobile-alt fa-5x"></i></center><br>';
+         var libro = '<br><br><center><i class="fas fa-mobile-alt fa-5x"></i></center>';
          var libro1 = '<center><p style="font-size:5vw";>Contact</p></center><br>';
          var result = "<p>My bad, but I decided to remove my contact information here. Due to the reason that I received tons of spam emails and multi-level marketing proposal in the past which I'm not really interested in. Please feel free to send me an email using the contact form that I created for this purpose.<br>Please type the command \"<span style=color:#32CD32;>mail</span>\" to get to that page.<br><br>Thank You.</p><br> ";
          output(libro + libro1 + result);
          break;
 
         case 'whoami':
-        var pagkakakilanlan = '<br><br><center><i class="far fa-id-card fa-5x"></i></center><br>';
+        var pagkakakilanlan = '<br><br><center><i class="far fa-id-card fa-5x"></i></center>';
         var result = (function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<0 3=2-1:4;>5 8 7ñ6</0>',9,9,'h1|align|text|style|center|James|a|Espe|Paul'.split('|'),0,{}));
         output(pagkakakilanlan + result);
         break;
@@ -167,10 +168,16 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
         case 'mail':
         var result = window.open('https://rockstartraders.github.io/james-cli-contact/contact.html');
-        var result9 = '<br><br><center><i class="fa fa-mail-bulk fa-5x"></i></center><br>';
+        var result9 = '<br><br><center><i class="fa fa-mail-bulk fa-5x"></i></center>';
         var sulat = '<center><p style="font-size:5vw";>Mail</p></center><br>';
         output( result9 + sulat + "New Tab Session .. <br>Thank you so much for visiting my \"<span style=color:#32CD32;>mail</span>\" page.<br>I will try to get back to you as soon as I can.");
   		  break;
+
+        case 'about':
+         var inpormasyon = '<br><br><center><i class="fas fa-info fa-5x"></i></center>';
+         var inpormasyon1 = '<center><p style="font-size:5vw";>About</p></center><br>';
+         output( inpormasyon + inpormasyon1 );
+         break;
 
 
         //
