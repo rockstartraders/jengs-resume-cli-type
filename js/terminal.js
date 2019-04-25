@@ -180,12 +180,24 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          break;
 
 
-        //
+        // Music Starts Here
 
-        case 'y':
+        case 'fade-to-black':
+        var audio = new Audio('./music/Fade to black.mp3');
+        var audio = audio.play();
+        var audio2 = 'Title:&nbspFade To Black<br>';
+        var audio3 = 'By:&nbspDisturbed<br>';
+        var audio4 = 'Genre:&nbspRock<br>';
+        output(audio2 + audio3 + audio4 );
+        break;
 
-        var result = '';
-        output(result);
+        case 'cemetery-gates':
+        var audio = new Audio('./music/pantera.mp3');
+        var audio = audio.play();
+        var audio2 = 'Title:&nbspCemetery Gates<br>';
+        var audio3 = 'By:&nbspPantera<br>';
+        var audio4 = 'Genre:&nbspRock<br>';
+        output(audio2 + audio3 + audio4);
         break;
 
 
