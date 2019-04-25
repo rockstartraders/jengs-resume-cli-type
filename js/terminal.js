@@ -112,7 +112,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'help':
         var help0 = '<br><center><i class="far fa-question-circle fa-5x"></i></center>';
         var help1 = '<center><p style="font-size:5vw";>Help</p></center><br>';
-        var result1 = (function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<0 3=2:#5;><b>j</0>:</b>&4 7 8 6 9.<1><0 3=2:#5;><b>d</0>:</b>&4 7 8 6 9 f 6 d.<1><0 3=2:#5;><b>a</0>:</b>&4 7 8 6 a.<1><0 3=2:#5;><b>i</0>:</b>&4 h g<1><0 3=2:#5;><b>e</0>:</b>&4 e o<1><0 3=2:#5;><b>p</0>:</b>&4 7 n k.<1><0 3=2:#5;><b>c</0>:</b>&4 7 8 6 9 f 6 l m c.<1>',26,26,'span|br|color|style|nbsp|32CD32|my|display|all|information|interests||programming|education|clear|about|hello|Say|contact|whoami|menu|achievements|in|this|terminal|help'.split('|'),0,{}));
+        var result1 = '<center><span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>time</span>:&nbspTo view your time (system dependent)<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <span style=color:#3ed400;>Github Repo</span>.<br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know.<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>skills</span>:&nbspOther skills I know<br><br><br><br></center>';
         output(help0 + help1 + result1);
         break;
 
@@ -180,12 +180,88 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          break;
 
 
+         // Playslist text
+
+         case 'music':
+         var musika = '<br><center><i class="fas fa-headphones-alt fa-5x"></i></center>';
+         var musika1 = '<center><p style="font-size:5vw";>My Music</p></center><br>';
+         var result = " Music List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ] <br><br>fade-to-black<br>leave-out-all-the-rest<br>norem<br>cemetery-gates<br>sad-but-true<br>scars<br>the-same-love<br>wag-ka-naman<br>you-wanted-more<br><br>";
+         output( musika + musika1 + result);
+         break;
+
+
         // Music Starts Here
+
+        case 'scars':
+        var audio = new Audio('./music/Scars.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspScars<br>';
+        var audio3 = 'By:&nbspPapa Roach<br>';
+        var audio4 = 'Genre:&nbspRock';
+        output(audio2 + audio3 + audio4 );
+        break;
+
+        case 'leave-out-all-the-rest':
+        var audio = new Audio('./music/Leave Out All The Rest.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspLeave Out All The Rest<br>';
+        var audio3 = 'By:&nbspLinkin Park<br>';
+        var audio4 = 'Genre:&nbspRock';
+        output(audio2 + audio3 + audio4 );
+        break;
+
+        case 'the-same-love':
+        var audio = new Audio('./music/The Same Love.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspSame Love<br>';
+        var audio3 = 'By:&nbspThe Jets<br>';
+        var audio4 = 'Genre:&nbsp80\'s Love Song' ;
+        output(audio2 + audio3 + audio4 );
+        break;
+
+        case 'sad-but-true':
+        var audio = new Audio('./music/Sad But True.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspSad But True<br>';
+        var audio3 = 'By:&nbspMetallica<br>';
+        var audio4 = 'Genre:&nbspRock';
+        output(audio2 + audio3 + audio4 );
+        break;
+
+        case 'you-wanted-more':
+        var audio = new Audio('./music/you wanted more.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspYou Wanted More<br>';
+        var audio3 = 'By:&nbspTonic<br>';
+        var audio4 = 'Genre:&nbspAlternative Rock';
+        output(audio2 + audio3 + audio4 );
+        break;
+
+
+        case 'norem':
+        var audio = new Audio('./music/Norem.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspNorem<br>';
+        var audio3 = 'By:&nbspGloc-9 ft. J.Kris, Abaddon, Shanti Dope<br>';
+        var audio4 = 'Genre:&nbspOPM&nbspRap';
+        output(audio2 + audio3 + audio4 );
+        break;
+
+        case 'wag-ka-naman':
+        var audio = new Audio('./music/Wag Ka Naman.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspWag Ka Naman<br>';
+        var audio3 = 'By:&nbspLoraine feat. Smugglaz<br>';
+        var audio4 = 'Genre:&nbspOPM&nbspRap';
+        output(audio2 + audio3 + audio4 );
+        break;
+
+
 
         case 'fade-to-black':
         var audio = new Audio('./music/Fade to black.mp3');
         var audio = audio.play();
-        var audio2 = 'Title:&nbspFade To Black<br>';
+        var audio2 = '<br>Title:&nbspFade To Black<br>';
         var audio3 = 'By:&nbspDisturbed<br>';
         var audio4 = 'Genre:&nbspRock<br>';
         output(audio2 + audio3 + audio4 );
@@ -194,7 +270,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'cemetery-gates':
         var audio = new Audio('./music/pantera.mp3');
         var audio = audio.play();
-        var audio2 = 'Title:&nbspCemetery Gates<br>';
+        var audio2 = '<br>Title:&nbspCemetery Gates<br>';
         var audio3 = 'By:&nbspPantera<br>';
         var audio4 = 'Genre:&nbspRock<br>';
         output(audio2 + audio3 + audio4);
