@@ -179,6 +179,12 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          output( inpormasyon + inpormasyon1 );
          break;
 
+         case 'skills':
+          var inpormasyon = '<br><br><center><i class="fas fa-info fa-5x"></i></center>';
+          var inpormasyon1 = '<center><p style="font-size:5vw";>Skills pero wala pa ako malagay</p></center><br>';
+          output( inpormasyon + inpormasyon1 );
+          break;
+
 
          // Playslist text
 
