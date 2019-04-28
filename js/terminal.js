@@ -112,7 +112,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'help':
         var help0 = '<br><center><i class="far fa-question-circle fa-5x"></i></center>';
         var help1 = '<center><p style="font-size:5vw";>Help</p></center><br>';
-        var result1 = '<span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>time</span>:&nbspTo view your time (system dependent)<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <span style=color:#3ed400;>Github Repo</span>.<br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know.<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>skills</span>:&nbspOther skills I know<br><br>';
+        var result1 = '<span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>time</span>:&nbspTo view your time (system dependent)<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <span style=color:#3ed400;>Github Repo</span>.<br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know.<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>skills</span>:&nbspOther skills I know<br><span style=color:#3ed400;>games</span>:&nbspPlay a game <br><br>';
         output(help0 + help1 + result1);
         break;
 
@@ -186,6 +186,47 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           break;
 
 
+          case 'games':
+          var gameinfo = '<br><br><center><i class="fas fa-gamepad fa-5x"></i></center>';
+          var gameinfo1 = '<center><p style="font-size:5vw";>My Browser Games</p></center><br>';
+          var gameinfo2 = "<center> I know this is not relevant but every once in a while, <br>I want to play something and the best option is to embed it to my website.<br><br></center>";
+          var gameinfo3 = "Game List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ] <br><br>adventure-ho<br>roller-rider<br>heat-rush<br>neon-race<br><br>";
+          output(gameinfo + gameinfo1 + gameinfo2 + gameinfo3);
+          break;
+
+
+
+           //game starts here //
+
+
+           case 'adventure-ho':
+           var game1 = '<center><br><br><embed width="800" height="700" base="https://external.kongregate-games.com/gamez/0001/6224/live/" src="https://external.kongregate-games.com/gamez/0001/6224/live/embeddable_16224.swf" type="application/x-shockwave-flash"></embed><br/></center><br>';
+           var game2 = '<center>Play free games at <a href="https://www.kongregate.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";>Kongregate</a></span></center><br>';
+           output( game1 + game2 );
+           break;
+
+
+           case 'roller-rider':
+           var game1 = '<center><br><br><embed width="800" height="700" base="https://external.kongregate-games.com/gamez/0021/6804/live/" src="https://external.kongregate-games.com/gamez/0021/6804/live/embeddable_216804.swf" type="application/x-shockwave-flash"></embed><br/></center><br>';
+           var game2 = '<center>Play free games at <a href="https://www.kongregate.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";>Kongregate</a></span></center><br>';
+           output( game1 + game2 );
+           break;
+
+
+           case 'heat-rush':
+           var game1 = '<center><br><br><embed width="640" height="480" base="https://external.kongregate-games.com/gamez/0017/9179/live/" src="https://external.kongregate-games.com/gamez/0017/9179/live/embeddable_179179.swf" type="application/x-shockwave-flash"></embed><br/></center><br>';
+           var game2 = '<center>Play free games at <a href="https://www.kongregate.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";>Kongregate</a></span></center><br>';
+           output( game1 + game2 );
+           break;
+
+           case 'neon-race':
+           var game1 = '<center><br><br><embed width="800" height="700" base="https://external.kongregate-games.com/gamez/0013/7834/live/" src="https://external.kongregate-games.com/gamez/0013/7834/live/embeddable_137834.swf" type="application/x-shockwave-flash"></embed><br/></center><br>';
+           var game2 = '<center>Play free games at <a href="https://www.kongregate.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";>Kongregate</a></span></center><br>';
+           output( game1 + game2 );
+           break;
+
+
+
          // Playslist text
 
          case 'music':
@@ -195,8 +236,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          output( musika + musika1 + result);
          break;
 
-
-        // Music Starts Here
+            // Music Starts Here
 
         case 'scars':
         var audio = new Audio('./music/Scars.mp3');
