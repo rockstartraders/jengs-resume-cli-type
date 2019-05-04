@@ -11,6 +11,9 @@
 }  */
 
 
+
+
+
 body {
 
   /* font-size: 1.2vw;   remove muna to have it updated thanks to https://css-tricks.com/snippets/css/fluid-typography/ */
@@ -21,8 +24,37 @@ body {
   font-weight: bolder;
   line-height: 1.4;
 
+}
+
+.embed-container {
+  width: 100%;
+  margin: auto;
+
+
 
 }
+
+@media screen and (max-width: 600px) {
+
+  embed{
+    width: auto;
+    height: auto;
+    padding-bottom: 0;
+
+  }
+}
+
+embed{
+padding-bottom: 0;
+
+}
+
+.game {
+  margin: 0;
+}
+
+
+
 #container {
   padding: .1em 1.5em 1em 1em;
 }

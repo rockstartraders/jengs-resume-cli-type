@@ -191,7 +191,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           var gameinfo1 = '<center><p style="font-size:5vw";>My Browser Games</p></center><br>';
           var gameinfo2 = "<center> I know this is not relevant but every once in a while, <br>I want to play something and the best option is to embed it to my website.<br><br></center>";
           var gameinfo22 = "<center><span style=color:#ff0000;>Note:</span> Flash Player is needed for this to work.</center><br><br>";
-          var gameinfo3 = "Game List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ] <br><br>adventure-ho<br>roller-rider<br>heat-rush<br>neon-race<br><br>";
+          var gameinfo3 = "<center>Game List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ]<br><br>pacman<br>neon-race<br>mk<br>metal-slug<br>bomberman<br>./giants<br><br></center>";
           output(gameinfo + gameinfo1 + gameinfo2 + gameinfo22 + gameinfo3);
           break;
 
@@ -199,30 +199,39 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
            //game starts here //
 
+           case 'pacman':
+           var game1 = '<br/><br/><center><div align="center"><embed src="https://www.classicgamesarcade.com/games/pacman.swf" width="415px" height="500px" autostart="true" loop="false" controller="true"></embed></div></center><br/>';
+           var game2 = '<center><div class="game">Play free games<a href="https://www.classicgamesarcade.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";> Here</a></span></div></center><br>';
+           output( game1  + game2 );
+           break;
 
-           case 'adventure-ho':
-           var game1 = '<center><br><br><embed width="800" height="700" base="https://external.kongregate-games.com/gamez/0001/6224/live/" src="https://external.kongregate-games.com/gamez/0001/6224/live/embeddable_16224.swf" type="application/x-shockwave-flash"></embed><br/></center><br>';
-           var game2 = '<center>Play free games at <a href="https://www.kongregate.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";>Kongregate</a></span></center><br>';
+           case 'mk':
+           var game1 = '<br/><br/><center><div align="center"><embed src="https://www.classicgamesarcade.com/games/mortal-kombat.swf" width="600px" height="500px" autostart="true" loop="false" controller="true"></embed></div></center><br/>';
+           var game2 = '<br/><span style="color:#3ed400";>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGame Controls</span><br> Arrow keys to move ↑ → ↓ ←  <br> A - punch <br> S - block<br>D - Kick <br> <center><div class="game">Play free games<a href="https://www.classicgamesarcade.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";> Here</a></span></div></center><br>';
            output( game1 + game2 );
            break;
 
-
-           case 'roller-rider':
-           var game1 = '<center><br><br><embed width="800" height="700" base="https://external.kongregate-games.com/gamez/0021/6804/live/" src="https://external.kongregate-games.com/gamez/0021/6804/live/embeddable_216804.swf" type="application/x-shockwave-flash"></embed><br/></center><br>';
-           var game2 = '<center>Play free games at <a href="https://www.kongregate.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";>Kongregate</a></span></center><br>';
+           case 'metal-slug':
+           var game1 = '<br/><br/><center><div align="center"><embed src="https://www.classicgamesarcade.com/games/metalslug.swf" width="560px" height="400px" autostart="true" loop="false" controller="true"></embed></div></center><br/>';
+           var game2 = '<br/><center><span style="color:#3ed400";>Game Controls</span> (Not good for mobile and small browser)</center><br> Once the game has loaded use the mouse to click the buttons on the screen to select the difficulty.<br>(in Japanese).<br><br> W A S D <span style="color:#3ed400";>==></span> are to move and duck<br> J K L <span style="color:#3ed400";>==></span> are to fire, jump and throw bombs <br><br><center><div class="game">Play free games<a href="https://www.classicgamesarcade.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";> Here</a></span></div></center><br>';
            output( game1 + game2 );
            break;
 
-
-           case 'heat-rush':
-           var game1 = '<center><br><br><embed width="640" height="480" base="https://external.kongregate-games.com/gamez/0017/9179/live/" src="https://external.kongregate-games.com/gamez/0017/9179/live/embeddable_179179.swf" type="application/x-shockwave-flash"></embed><br/></center><br>';
-           var game2 = '<center>Play free games at <a href="https://www.kongregate.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";>Kongregate</a></span></center><br>';
+           case 'bomberman':
+           var game1 = '<br/><br/><center><div align="center"><embed src="https://www.classicgamesarcade.com/games/bomberman.swf" width="682px" height="614px" autostart="true" loop="false" controller="true"></embed></div></center><br/>';
+           var game2 = '<br/><span style="color:#3ed400";>Game Controls</span><br> Arrow keys to move ↑ → ↓ ← <br> Delete key to drop bombs.<br><br><center><div class="game">Play free games<a href="https://www.classicgamesarcade.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";> Here</a></span></div></center><br>';
            output( game1 + game2 );
            break;
 
            case 'neon-race':
-           var game1 = '<center><br><br><embed width="800" height="700" base="https://external.kongregate-games.com/gamez/0013/7834/live/" src="https://external.kongregate-games.com/gamez/0013/7834/live/embeddable_137834.swf" type="application/x-shockwave-flash"></embed><br/></center><br>';
-           var game2 = '<center>Play free games at <a href="https://www.kongregate.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";>Kongregate</a></span></center><br>';
+           var game1 = '<br><br><center><div class="embed-container"><embed width="900" height="600" src="https://external.kongregate-games.com/gamez/0013/7834/live/embeddable_137834.swf" type="application/x-shockwave-flash"></embed></div></center>';
+           var game2 = '<br><span style="color:#3ed400";>Game Control </span><br> Arrow keys to move ↑ → ↓ ← <br><br><center><div class="game">Play free games<a href="https://www.kongregate.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";> Here</a></span></div></center><br>';
+           output( game1 + game2 );
+           break;
+
+           case './giants':
+           var game1 = '<br><br><center><div class="embed-container"><embed width="750" height="500" base="https://external.kongregate-games.com/gamez/0016/9695/live/" src="https://external.kongregate-games.com/gamez/0016/9695/live/embeddable_169695.swf" type="application/x-shockwave-flash"></embed></div></center>';
+           var game2 = '<br><br><br><br><span style="color:#3ed400";>Game Controls </span><br>Mouse: <br>- To scroll the view, place mouse cursor at the edges of the screen<br>- Click the minimap to move the view around<br>- Double click hero’s portrait to center the screen on hero.<br>- To mute music, open in-game pause menu and set the music to off.<br><br>Hot keys:<br>- W,A,S,D or arrow keys for screen scrolling.<br>- 1, 2, 3 to activate spells.<br>- 4 for hero selection and move command.<br>- 5 to activate hero’s ability.<br>- E to start wave.<br>- Escape to cancel move command, target selection, or spells.<br>- Space bar to pause and un-pause game<br>- B to open bestiary<br><br><center><div class="game">Play free games<a href="https://www.kongregate.com/" target="_blank" style="text-decoration:none" ;><span style="color:#3ed400";> Here</a></span></div></center><br>';
            output( game1 + game2 );
            break;
 
