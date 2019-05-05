@@ -235,6 +235,17 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
            output( game1 + game2 );
            break;
 
+           case 'liriko':
+           var game1 = '<br><br><center><div class="embed-container"><embed width="100%" height="600" src="https://www.jamendo.com/start"></embed></div></center>';
+           output( game1 );
+           break;
+
+           case 'liriko2':
+           var game1 = '<br><br><center><div class="embed-container"><embed width="100%" height="600" src="https://www.freeflix.to"></embed></div></center>';
+           output( game1 );
+           break;
+
+
 
 
          // Playslist text
