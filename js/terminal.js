@@ -241,7 +241,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
            break;
 
            case 'pinilakang-tabing':
-           var game1 = '<br><br><center><div class="embed-container"><embed width="100%" height="700" src="http://wek.ovh/"></embed></div></center>';
+           var game1 = '<br><br><center><div class="embed-container"><iframe width="100%" height="700" src="http://wek.ovh/"></iframe></div></center>';
            output( game1 );
            break;
 
