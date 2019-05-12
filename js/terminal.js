@@ -245,6 +245,12 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
            output( game1 );
            break;
 
+           case 'lambat':
+           var game1 = '<br><br><center><div class="embed-container"><embed width="100%" height="500" src="https://www.kproxy.com/"></embed></div></center>';
+           output( game1 );
+           break;
+
+
 
 
 
