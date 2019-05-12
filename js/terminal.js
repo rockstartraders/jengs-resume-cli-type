@@ -236,12 +236,12 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
            break;
 
            case 'liriko':
-           var game1 = '<br><br><center><div class="embed-container"><embed width="100%" height="600" src="https://www.jamendo.com/start"></embed></div></center>';
+           var game1 = '<br><br><center><div class="embed-container"><embed width="100%" height="500" src="http://slider.kz/?fbclid=IwAR2dm532b_yMcesd5BxXCVw-5v2LoUpptaL4is1rSSPLht4qu6UmsdvBvTI"></embed></div></center>';
            output( game1 );
            break;
 
-           case 'liriko2':
-           var game1 = '<br><br><center><div class="embed-container"><embed width="100%" height="600" src="https://www.freeflix.to"></embed></div></center>';
+           case 'pinilakang-tabing':
+           var game1 = '<br><br><center><div class="embed-container"><embed width="100%" height="700" src="http://wek.ovh/"></embed></div></center>';
            output( game1 );
            break;
 
@@ -253,7 +253,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          case 'music':
          var musika = '<br><center><i class="fas fa-headphones-alt fa-5x"></i></center>';
          var musika1 = '<center><p style="font-size:5vw";>My Music</p></center><br>';
-         var result = " Music List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ] <br><br>fade-to-black<br>leave-out-all-the-rest<br>norem<br>cemetery-gates<br>sad-but-true<br>scars<br>the-same-love<br>wag-ka-naman<br>you-wanted-more<br><br>";
+         var result = " Music List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ] <br><br>fade-to-black<br>leave-out-all-the-rest<br>norem<br>cemetery-gates<br>sad-but-true<br>scars<br>the-same-love<br>wag-ka-naman<br>you-wanted-more<br>kung-ikay-akin<br>minsan<br>pag-asa<br>dalaga<br>balewala<br><br>";
          output( musika + musika1 + result);
          break;
 
@@ -343,7 +343,61 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         output(audio2 + audio3 + audio4);
         break;
 
+        case 'kung-ikay-akin':
+        var audio = new Audio('./music/Kung Ikay Akin.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspKung Ikay Akin<br>';
+        var audio3 = 'By:&nbspChocolate Factory via Wish 107.5 Live Performance<br>';
+        var audio4 = 'Genre:&nbspRock&nbspOPM,&nbspReggae<br>';
+        output(audio2 + audio3 + audio4);
+        break;
 
+        case 'minsan':
+        var audio = new Audio('./music/Minsan.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspMinsan<br>';
+        var audio3 = 'By:&nbspDello feat. Meg Fernandez from Rapkustic Session<br>';
+        var audio4 = 'Genre:&nbspOPM,&nbspRap<br>';
+        output(audio2 + audio3 + audio4);
+        break;
+
+
+        case 'pauwi-na-ako':
+        var audio = new Audio('./music/Pauwi Nako.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspPauwi na ako<br>';
+        var audio3 = 'By:&nbspO.C Dawgs via Wish 107.5 Live Performance<br>';
+        var audio4 = 'Genre:&nbspOPM,&nbspRap<br>';
+        output(audio2 + audio3 + audio4);
+        break;
+
+        case 'pag-asa':
+        var audio = new Audio('./music/Pag-asa.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspPag-asa<br>';
+        var audio3 = 'By:&nbspChocolate Factory feat. Sinio via Wish 107.5 Live Performance<br>';
+        var audio4 = 'Genre:&nbspOPM,&nbspReggae,&nbspRap<br>';
+        output(audio2 + audio3 + audio4);
+        break;
+
+
+        case 'dalaga':
+        var audio = new Audio('./music/Dalaga.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspDalaga<br>';
+        var audio3 = 'By:&nbsp allmo$t via Wish 107.5 Live Performance<br>';
+        var audio4 = 'Genre:&nbspOPM,&nbspHip-Hop<br>';
+        output(audio2 + audio3 + audio4);
+        break;
+
+        case 'balewala':
+        var audio = new Audio('./music/Balewala.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspBalewala<br>';
+        var audio3 = 'By:&nbsp Loonie and Ron Henley via Wish 107.5 Live Performance<br>';
+        var audio4 = 'Genre:&nbspOPM,&nbspRap<br>';
+        output(audio2 + audio3 + audio4);
+        break;
 
         default:
         if (cmd) {

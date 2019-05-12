@@ -17,7 +17,7 @@
 body {
 
   /* font-size: 1.2vw;   remove muna to have it updated thanks to https://css-tricks.com/snippets/css/fluid-typography/ */
-  font-size: calc(13px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Quango',Lucida Console,Inconsolata, monospace;
   color: white;
   background-color: #300A24;
