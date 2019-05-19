@@ -401,6 +401,19 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         output(audio2 + audio3 + audio4);
         break;
 
+
+        // converted music and join dito
+
+
+        case 'wish':
+        var audio = new Audio('./music/wish_rap.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspMy Playlist for OPM Rap<br>';
+        var audio3 = 'By:&nbsp Various Artist via Wish 107.5 Live Performance<br>';
+        var audio4 = 'Genre:&nbspOPM,&nbspRap<br>';
+        output(audio2 + audio3 + audio4);
+        break;
+
         default:
         if (cmd) {
           eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('8(9+\': b 7 d \'+\'!\'+"<1>"+"6 3 4 5 a c m e."+"<1>"+" n o &2 \'<0 k=j:#f;>g</0>\' &2 h i l.")',25,25,'span|br|nbsp|Cannot|Recall|Creating|I|not|output|cmd||command|Command|found|That|32CD32|help|for|Further|color|style|Assistance|Like|Please|Type'.split('|'),0,{}));
