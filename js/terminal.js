@@ -245,11 +245,12 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
            break;
 
            case 'pinilakang-tabing':
-           var game1 = '<br><br><center><div class="embed-container"><iframe width="100%" height="700" src="http://wek.ovh/"></iframe></div></center>';
-           output( game1 );
+           var pilak = $('output').html('<object id="pilak" width="100%" height="700" data="http://wek.ovh/"/>');
+           var pilak2 = '<br><center>Just Have Fun</center><br><br>';
+           output(pilak2);
            break;
 
- 
+
 
 
 
