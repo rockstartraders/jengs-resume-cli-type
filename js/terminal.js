@@ -247,11 +247,14 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
            case 'pinilakang-tabing':
            var pilak = $('output').html('<object id="pilak" width="100%" height="700" data="http://wek.ovh/"/>');
            var pilak2 = '<br><center>Just Have Fun<br>Previous Outputs will be deleted by doing this process.<br>Just Re-type it.</center><br><br>';
-           var pilak3 = '<center>Previous Outputs will be deleted by doing this process.<br></center><br>';
            output(pilak2);
            break;
 
-
+           case 'tubo':
+           var tubo = $('output').html('<object id="tubo" width="100%" height="700" data="https://crossorigin.me/https://www.freeflix.to/en"/>');
+           var tubo1 = '<br><center>Just Have Fun<br>Previous Outputs will be deleted by doing this process.<br>Just Re-type it.</center><br><br>';
+           output(tubo1);
+           break;
 
 
 
