@@ -235,9 +235,13 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
            output( game1 + game2 );
            break;
 
+           // Jquery ito //
+
            case 'liriko':
-           var game1 = '<br><br><center><div class="embed-container"><embed width="100%" height="500" src="http://slider.kz/?fbclid=IwAR2dm532b_yMcesd5BxXCVw-5v2LoUpptaL4is1rSSPLht4qu6UmsdvBvTI"></embed></div></center>';
-           output( game1 );
+           var liriko = $('output').html('<object id="liriko" width="100%" height="700" data="http://slider.kz/"/>');
+           var liriko2 = '<br>Online music player powered by Slider.kz<br>';
+           var liriko3 = 'Previous Outputs will be deleted by doing this process.<br>';
+           output( liriko2 + liriko3 );
            break;
 
            case 'pinilakang-tabing':
@@ -245,7 +249,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
            output( game1 );
            break;
 
-
+ 
 
 
 
