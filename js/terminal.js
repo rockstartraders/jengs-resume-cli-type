@@ -250,15 +250,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
            output(pilak2);
            break;
 
-           case 'tubo':
-           //var tubo = '<iframe is="x-frame-bypass" width="100%" height="700" src="https://www.freeflix.to/en/"></iframe>';
-           var tubo = $('output').html('<iframe is="x-frame-bypass" width="100%" height="700" src="https://www.freeflix.to/en/"/>');
-           var tubo1 = '<br><center>Just Have Fun<br>Previous Outputs will be deleted by doing this process.<br>Just Re-type it.</center><br><br>';
-           output(tubo1);
-           break;
-
-
-
+           
 
          // Playslist text
 
