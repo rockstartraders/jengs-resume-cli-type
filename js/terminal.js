@@ -250,7 +250,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
            output(pilak2);
            break;
 
-           
+
 
          // Playslist text
 
@@ -415,6 +415,15 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         var audio4 = 'Genre:&nbspOPM,&nbspRap<br>';
         output(audio2 + audio3 + audio4);
         break;
+
+
+        // Download ng resume
+        case 'view-resume':
+        var resume = window.open('././etc/james_resume.pdf');
+        var resume2 = '<br>Thank you for viewing my resume.<br>Please feel free to contact me if needed.<br>';
+        output(resume2);
+        break;
+
 
         default:
         if (cmd) {
