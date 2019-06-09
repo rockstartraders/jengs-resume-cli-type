@@ -112,7 +112,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'help':
         var help0 = '<br><center><i class="far fa-question-circle fa-5x"></i></center>';
         var help1 = '<center><p style="font-size:5vw";>Help</p></center><br>';
-        var result1 = '<span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>time</span>:&nbspTo view your time (system dependent)<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <span style=color:#3ed400;>Github Repo</span>.<br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know.<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>skills</span>:&nbspOther skills I know<br><span style=color:#3ed400;>games</span>:&nbspPlay a game <br><br>';
+        var result1 = '<span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>time</span>:&nbspTo view your time (system dependent)<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <span style=color:#3ed400;>Github Repo</span>.<br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know.<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>games</span>:&nbspPlay a game <br><span style=color:#3ed400;>resume-dl</span>:&nbspDownload my Resume<br><br>';
         output(help0 + help1 + result1);
         break;
 
@@ -125,7 +125,8 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'programming':
         var coding = '<br><br><center><i class="fas fa-terminal fa-5x"></i></center>';
         var coding1 = '<center><p style="font-size:5vw";>Programming</p></center><br>';
-        output(coding + coding1);
+        var coding2 = '<br><center>HTML, CSS, JAVASCRIPT and JQUERY <br> API’s and JSON<br>Bootstrap<br>REACT JS<br>VB.NET<br>JAVA<br>SQL<br>GIT<br>MARKDOWN (GitHub’s .MD modification)<br>Batch & Bash Scripting</center><br><br>';
+        output(coding + coding1 + coding2);
         break;
 
         case 'interests':
@@ -142,8 +143,9 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
         case 'whoami':
         var pagkakakilanlan = '<br><br><center><i class="far fa-id-card fa-5x"></i></center>';
-        var result = (function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('<0 3=2-1:4;>5 8 7ñ6</0>',9,9,'h1|align|text|style|center|James|a|Espe|Paul'.split('|'),0,{}));
-        output(pagkakakilanlan + result);
+        var result = '<br><center><p style="font-size:5vw";>JAMES PAUL ESPEÑA</p></center><br>';
+        var resultas = 'About Me ? well I am currently working on an I.T outsourcing company in Manila. I do love my work but I also love<br>programming, I do freelance work sometimes, specially if it\'s my off wherein I develop small system for small company\'s or sometimes even personal use.<br><br>I preffer using vb.net for system development and html, css, js for basic website.My future plan is to study and master python because I know that you can build a lot of stuff using that programming langguage (even hacking tools YES).<br>I want study Cybersecurity too.See I want to do a lot of things but still I want to keep programming as part of my main arsenal.<br><br>How about you?<br>' ;
+        output(pagkakakilanlan + result + resultas);
         break;
 
         case 'github':
@@ -176,14 +178,16 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'about':
          var inpormasyon = '<br><br><center><i class="fas fa-info fa-5x"></i></center>';
          var inpormasyon1 = '<center><p style="font-size:5vw";>About</p></center><br>';
-         output( inpormasyon + inpormasyon1 );
+         var inpormasyon2 = '<br>I decided to use a terminal website simply because I am a <span style=color:#3ed400;>LINUX</span> fan boy, Is it obvious? Also I love the simnplicy of a terminal it\'s easy to maintain and I can update it any time I wanted.I also know to how to create a GUI based website but believe it not this is is harder to build compare to a GUI one.<br><br> This website isa mix of js and jquery and html of course.Bunch of "<span style=color:#3ed400;>case statements</span>". I\'am not a fan of UBUNTU but the color of unity is something very unique that is why i decided to use this color hex <span style=color:#3ed400;>#300A24</span> as my background.<br>';
+         output( inpormasyon + inpormasyon1 + inpormasyon2 );
          break;
 
-         case 'skills':
-          var inpormasyon = '<br><br><center><i class="fas fa-info fa-5x"></i></center>';
-          var inpormasyon1 = '<center><p style="font-size:5vw";>Skills pero wala pa ako malagay</p></center><br>';
-          output( inpormasyon + inpormasyon1 );
-          break;
+        //case 'skills':
+        //  var inpormasyon = '<br><br><center><i class="fas fa-info fa-5x"></i></center>';
+        //  var inpormasyon1 = '<center><p style="font-size:5vw";>Skills pero wala pa ako malagay</p></center><br>';
+        //  output( inpormasyon + inpormasyon1 );
+        //  break;
+        //<span style=color:#3ed400;>skills</span>:&nbspOther skills I know<br>
 
 
           case 'games':
@@ -257,7 +261,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          case 'music':
          var musika = '<br><center><i class="fas fa-headphones-alt fa-5x"></i></center>';
          var musika1 = '<center><p style="font-size:5vw";>My Music</p></center><br>';
-         var result = " Music List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ] <br><br>fade-to-black<br>leave-out-all-the-rest<br>norem<br>cemetery-gates<br>sad-but-true<br>scars<br>the-same-love<br>wag-ka-naman<br>you-wanted-more<br>kung-ikay-akin<br>minsan<br>pag-asa<br>dalaga<br>balewala<br><br>";
+         var result = " Music List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ] <br><br>fade-to-black<br>leave-out-all-the-rest<br>norem<br>cemetery-gates<br>sad-but-true<br>scars<br>the-same-love<br>wag-ka-naman<br>you-wanted-more<br>kung-ikay-akin<br>minsan<br>pag-asa<br>dalaga<br>balewala<br>balewala<br><br>";
          output( musika + musika1 + result);
          break;
 
@@ -418,7 +422,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
 
         // Download ng resume
-        case 'view-resume':
+        case 'resume-dl':
         var resume = window.open('././etc/james_resume.pdf');
         var resume2 = '<br>Thank you for downloading my resume.<br>Please feel free to contact me if needed.<br><br>';
         output(resume2);
