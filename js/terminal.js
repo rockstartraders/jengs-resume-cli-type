@@ -262,7 +262,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          case 'music':
          var musika = '<br><center><i class="fas fa-headphones-alt fa-5x"></i></center>';
          var musika1 = '<center><p style="font-size:5vw";>My Music</p></center><br>';
-         var result = " Music List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ] <br><br>fade-to-black<br>leave-out-all-the-rest<br>norem<br>cemetery-gates<br>sad-but-true<br>scars<br>the-same-love<br>wag-ka-naman<br>you-wanted-more<br>kung-ikay-akin<br>minsan<br>pag-asa<br>dalaga<br>balewala<br>balewala<br><br>";
+         var result = " Music List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ] <br><br>fade-to-black<br>leave-out-all-the-rest<br>norem<br>cemetery-gates<br>sad-but-true<br>scars<br>the-same-love<br>wag-ka-naman<br>you-wanted-more<br>kung-ikay-akin<br>minsan<br>pag-asa<br>dalaga<br>balewala<br>balewala<br>wish<br><br><br>There is no playback function included here, If you need to change the song or music please make sure to <br>refresh this website first because it wont stop automatically or just enjoy it, finish the whole song before playing a new one. I promise to fix this on my free time.<br><br>";
          output( musika + musika1 + result);
          break;
 
