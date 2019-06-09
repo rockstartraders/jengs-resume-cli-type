@@ -420,7 +420,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         // Download ng resume
         case 'view-resume':
         var resume = window.open('././etc/james_resume.pdf');
-        var resume2 = '<br>Thank you for viewing my resume.<br>Please feel free to contact me if needed.<br>';
+        var resume2 = '<br>Thank you for downloading my resume.<br>Please feel free to contact me if needed.<br><br>';
         output(resume2);
         break;
 
