@@ -119,7 +119,8 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'education':
         var education = '<br><center><i class="fas fa-user-graduate fa-5x"></i></center>';
         var education1 = '<center><p style="font-size:5vw";>Education</p></center><br>';
-        output(education + education1 );
+        var education2 = '<br>If you are looking for a B.S Graduate then my apologies but I\'m not the guy you are looking for.But if you need a person who do have a 10+ years knowledge and experience dealing with technical support issues and superb communication and customer service skills then, I may be the person you need. Lastly If you need a person who spend his free time studying pentesting, programming and a linux lover at the same time for sure that\'s me.<br><br>Please feel free to contact me if I\'m the one you need.<br><br>';
+        output(education + education1 + education2 );
         break;
 
         case 'programming':
