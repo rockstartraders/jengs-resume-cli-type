@@ -195,7 +195,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
           var gameinfo = '<br><br><center><i class="fas fa-gamepad fa-5x"></i></center>';
           var gameinfo1 = '<center><p style="font-size:5vw";>My Browser Games</p></center><br>';
           var gameinfo2 = "<center> I know this is not relevant but every once in a while, <br>I want to play something and the best option is to embed it to my website.<br><br></center>";
-          var gameinfo22 = "<center><span style=color:#ff0000;>Note:</span> Flash Player is needed for this to work.</center><br><br>";
+          var gameinfo22 = "<center><span style=color:#ff0000;>Note:</span> Flash Player is needed for this to work.<br>Not Applicable for Mobile.</center><br><br>";
           var gameinfo3 = "<center>Game List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ]<br><br>pacman<br>neon-race<br>mk<br>metal-slug<br>bomberman<br>./giants<br><br></center>";
           output(gameinfo + gameinfo1 + gameinfo2 + gameinfo22 + gameinfo3);
           break;
