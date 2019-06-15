@@ -425,7 +425,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         // Download ng resume
         case 'resume-dl':
         var resume = window.open('././etc/james_resume.pdf');
-        var resume2 = '<br>Thank you for downloading my resume.<br>Please feel free to contact me if needed.<br><br>';
+        var resume2 = '<br>Thank you for downloading my resume.<br>For security reason please feel free to contact me to get the encryption key for my resume.<br>Please type <span style=color:#3ed400;>mail</span> to get in touch with me.<br>Cheers..<br>';
         output(resume2);
         break;
 
