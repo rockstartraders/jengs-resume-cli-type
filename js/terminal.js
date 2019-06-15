@@ -119,7 +119,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'education':
         var education = '<br><center><i class="fas fa-user-graduate fa-5x"></i></center>';
         var education1 = '<center><p style="font-size:5vw";>Education</p></center><br>';
-        var education2 = '<br>If you are looking for a B.S Graduate then my apologies but I\'m not the guy you are looking for.But if you need a person who do have a 10+ years knowledge and experience dealing with technical support issues and superb communication and customer service skills then, I may be the person you need. Lastly If you need a person who spend his free time studying pentesting, programming and a linux lover at the same time for sure that\'s me.<br><br>Please feel free to contact me if I\'m the one you need.<br><br>';
+        var education2 = '<br>If you are looking for a B.S Graduate then my apologies but I\'m not the guy you are looking for.But if you need a person who do have a 10+ years knowledge and experience dealing with technical support issues and superb communication and customer service skills then, I may be the person you need. Lastly, If you need a person who spend his free time studying pentesting, programming and a linux lover at the same time for sure that\'s me.<br><br>Please feel free to contact me if I\'m the one you need.<br><br>';
         output(education + education1 + education2 );
         break;
 
@@ -179,7 +179,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'about':
          var inpormasyon = '<br><br><center><i class="fas fa-info fa-5x"></i></center>';
          var inpormasyon1 = '<center><p style="font-size:5vw";>About</p></center><br>';
-         var inpormasyon2 = '<br>I decided to use a terminal website simply because I am a <span style=color:#3ed400;>LINUX</span> fan boy, Is it obvious? Also I love the simnplicy of a terminal it\'s easy to maintain and I can update it any time I wanted.I also know to how to create a GUI based website but believe it not this is is harder to build compare to a GUI one.<br><br> This website isa mix of js and jquery and html of course.Bunch of "<span style=color:#3ed400;>case statements</span>". I\'am not a fan of UBUNTU but the color of unity is something very unique that is why i decided to use this color hex <span style=color:#3ed400;>#300A24</span> as my background.<br>';
+         var inpormasyon2 = '<br>I decided to use a terminal website simply because I am a <span style=color:#3ed400;>LINUX</span> fan boy, Is it obvious? Also I love the simplicy of a terminal it\'s easy to maintain and I can update it any time I wanted. I do know to how to create a GUI based website,<br>But believe it or not this is harder to build compare to a GUI one.<br><br> This website is a mix of js and jquery and html of course plus a bunch of "<span style=color:#3ed400;>case statements</span>". I\'am not a fan of UBUNTU but the color of unity is something very unique that is why i decided to use this color hex <span style=color:#3ed400;>#300A24</span> as my background.<br>';
          output( inpormasyon + inpormasyon1 + inpormasyon2 );
          break;
 
