@@ -430,6 +430,46 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         break;
 
 
+        // settings
+
+        case 'bg-default':  // Black
+        var bg = $("*").css("background-color", "#300A24");
+        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        output(bg2);
+        break;
+
+        case 'bg-1':  // Black
+        var bg = $("*").css("background-color", "#141414");
+        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        output(bg2);
+        break;
+
+
+        case 'bg-2': // Midnight Blue
+        var bg = $("*").css("background-color", "#2c3e50");
+        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        output(bg2);
+        break;
+
+        case 'bg-3':  //Base 03 Solarized
+        var bg = $("*").css("background-color", "#002b36");
+        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        output(bg2);
+        break;
+
+        case 'bg-4':  //Solarized Grey
+        var bg = $("*").css("background-color", "#263238");
+        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        output(bg2);
+        break;
+
+        case 'bg-5':  //Powershell
+        var bg = $("*").css("background-color", "#012456");
+        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        output(bg2);
+        break;
+
+
         default:
         if (cmd) {
           eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('8(9+\': b 7 d \'+\'!\'+"<1>"+"6 3 4 5 a c m e."+"<1>"+" n o &2 \'<0 k=j:#f;>g</0>\' &2 h i l.")',25,25,'span|br|nbsp|Cannot|Recall|Creating|I|not|output|cmd||command|Command|found|That|32CD32|help|for|Further|color|style|Assistance|Like|Please|Type'.split('|'),0,{}));
