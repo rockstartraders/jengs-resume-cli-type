@@ -186,7 +186,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          case 'settings':
          var settings = '<br><center><i class="fas fa-cog fa-5x"></i></center>';
          var settings1 = '<center><p style="font-size:5vw";>Settings</p></center>';
-         var settings2 = '<br> Change The background color <br.';
+         var settings2 = '<br> To change The background color use the command:<span style=color:#3ed400;> bg-<u>Selected Option</u></span><br><br>Selection:<br><span style=color:#3ed400;>default</span> : Default Color which is Unity<br><span style=color:#3ed400;>1</span> : Black <br><span style=color:#3ed400;>2</span> : Midnight Blue<br> <span style=color:#3ed400;>3</span> : Base 03 Solarized <br><span style=color:#3ed400;>4</span> : Material Grey <br><span style=color:#3ed400;>5</span> : Powershell <br><br>';
          output(settings + settings1 + settings2 );
          break;
 
@@ -441,38 +441,38 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
         case 'bg-default':  // Black
         var bg = $("*").css("background-color", "#300A24");
-        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        var bg2 =  '<br> Background color change to : Default<br>';
         output(bg2);
         break;
 
         case 'bg-1':  // Black
         var bg = $("*").css("background-color", "#141414");
-        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        var bg2 =  '<br> Background color change to : Black<br>';
         output(bg2);
         break;
 
 
         case 'bg-2': // Midnight Blue
-        var bg = $("*").css("background-color", "#2c3e50");
-        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        var bg = $("*").css("background-color", "#003366");
+        var bg2 =  '<br> Background color change to : Midnight Blue<br>';
         output(bg2);
         break;
 
         case 'bg-3':  //Base 03 Solarized
         var bg = $("*").css("background-color", "#002b36");
-        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        var bg2 =  '<br> Background color change to : Base 03 Solarized<br>';
         output(bg2);
         break;
 
         case 'bg-4':  //Solarized Grey
         var bg = $("*").css("background-color", "#263238");
-        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        var bg2 =  '<br> Background color change to : Material Grey<br>';
         output(bg2);
         break;
 
         case 'bg-5':  //Powershell
         var bg = $("*").css("background-color", "#012456");
-        var bg2 = '<br> Hit F5 to refresh this page to go back to it\'s default unity color.<br>';
+        var bg2 = '<br> Background color change to : Powershell<br>';
         output(bg2);
         break;
 
