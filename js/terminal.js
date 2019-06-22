@@ -144,7 +144,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
         case 'whoami':
         var pagkakakilanlan = '<br><br><center><i class="far fa-id-card fa-5x"></i></center>';
-        var result = '<br><center><p style="font-size:5vw";>JAMES PAUL ESPEÑA</p></center><br>';
+        var result = '<br><center><p style="font-size:5vw";><span style=color:#FFFFAF;>JAMES PAUL ESPEÑA</p></center></span><br>';
         var resultas = 'About Me ? well I am currently working on an I.T outsourcing company in Manila. I do love my work but I also love<br>programming, I do freelance work sometimes, specially if it\'s my off wherein I develop small system for small company\'s or sometimes even personal use.<br><br>I preffer using vb.net for system development and html, css, js for basic website.My future plan is to study and master python because I know that you can build a lot of stuff using that programming langguage (even hacking tools YES).<br>I want study Cybersecurity too.See I want to do a lot of things but still I want to keep programming as part of my main arsenal.<br><br>How about you?<br>' ;
         output(pagkakakilanlan + result + resultas);
         break;
