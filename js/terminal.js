@@ -186,7 +186,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          case 'settings':
          var settings = '<br><center><i class="fas fa-cog fa-5x"></i></center>';
          var settings1 = '<center><p style="font-size:5vw";>Settings</p></center>';
-         var settings2 = '<br> To change The background color use the command:<span style=color:#3ed400;> bg-<u>Selected Option</u></span><br><br>Selection:<br><span style=color:#3ed400;>default</span> : Default Color which is Unity<br><span style=color:#3ed400;>1</span> : Black <br><span style=color:#3ed400;>2</span> : Midnight Blue<br> <span style=color:#3ed400;>3</span> : Base 03 Solarized <br><span style=color:#3ed400;>4</span> : Material Grey <br><span style=color:#3ed400;>5</span> : Powershell <br><br>';
+         var settings2 = '<br> To change the background color use the command :<span style=color:#3ed400;> bg-</span><i>Selected Option</i><br><br>Options:<br><span style=color:#3ed400;>default</span> : Default Color which is Unity<br><span style=color:#3ed400;>1</span> : Black <br><span style=color:#3ed400;>2</span> : Midnight Blue<br> <span style=color:#3ed400;>3</span> : Base 03 Solarized <br><span style=color:#3ed400;>4</span> : Material Grey <br><span style=color:#3ed400;>5</span> : Powershell<br><br>To change the font use the command :<span style=color:#3ed400;> font-</span><i>Selected Option</i><br><br>Options:<br><span style=color:#3ed400;>default</span> : Default font which is Quango<br><span style=color:#3ed400;>1</span> : Monospace <br><span style=color:#3ed400;>2</span> : Courier<br> <span style=color:#3ed400;>3</span> : IBM Plex Mono <br><span style=color:#3ed400;>4</span> : Segoe UI <br><span style=color:#3ed400;>5</span> : Consolas<br><br>';
          output(settings + settings1 + settings2 );
          break;
 
@@ -480,38 +480,38 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          // Settings for Font
 
          case 'font-default':  //monospace
-         var font = $("*").css("font-family","Quango");
+         var font = $("body").css("font-family","Quango");
          var font2 = '<br> Font-family is set to <i><span style=color:#FFFFAF;>default</span></i><br>';
          output(font2);
          break;
 
         case 'font-1':  //monospace
-        var font = $("*").css("font-family","monospace");
+        var font = $("body").css("font-family","monospace");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Monospace</span></i><br>';
         output(font2);
         break;
 
 
         case 'font-2':  //COURIER
-        var font = $("*").css("font-family","Courier");
+        var font = $("body").css("font-family","Courier");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Courier</span></i><br>';
         output(font2);
         break;
 
         case 'font-3':  //IBM Plex Mono
-        var font = $("*").css("font-family","IBM Plex Mono");
+        var font = $("body").css("font-family","IBM Plex Mono");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>IBM Plex Mono</span></i><br>';
         output(font2);
         break;
 
         case 'font-4':  //Segoe UI
-        var font = $("*").css("font-family","Segoe UI");
+        var font = $("body").css("font-family","Segoe UI");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Segoe UI</span></i><br>';
         output(font2);
         break;
 
         case 'font-5':  //Consolas
-        var font = $("*").css("font-family","Consolas");
+        var font = $("body").css("font-family","Consolas");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Consolas</span></i><br>';
         output(font2);
         break;
