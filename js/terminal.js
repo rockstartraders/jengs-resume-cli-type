@@ -479,39 +479,39 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
          // Settings for Font
 
-         case 'font-default':  //monospace
-         var font = $("body").css("font-family","Quango");
-         var font2 = '<br> Font-family is set to <i><span style=color:#FFFFAF;>default</span></i><br>';
-         output(font2);
-         break;
+        case 'font-default':  //monospace
+        var font = $("body,.typewrite").css("font-family","Quango");
+        var font2 = '<br> Font-family is set to <i><span style=color:#FFFFAF;>default</span></i><br>';
+        output(font2);
+        break;
 
         case 'font-1':  //monospace
-        var font = $("body").css("font-family","monospace");
+        var font = $("body,.typewrite").css("font-family","monospace");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Monospace</span></i><br>';
         output(font2);
         break;
 
 
         case 'font-2':  //COURIER
-        var font = $("body").css("font-family","Courier");
+        var font = $("body, .typewrite").css("font-family","Courier");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Courier</span></i><br>';
         output(font2);
         break;
 
         case 'font-3':  //IBM Plex Mono
-        var font = $("body").css("font-family","IBM Plex Mono");
+        var font = $("body,.typewrite").css("font-family","IBM Plex Mono");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>IBM Plex Mono</span></i><br>';
         output(font2);
         break;
 
         case 'font-4':  //Segoe UI
-        var font = $("body").css("font-family","Segoe UI");
+        var font = $("body,.typewrite").css("font-family","Segoe UI");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Segoe UI</span></i><br>';
         output(font2);
         break;
 
         case 'font-5':  //Consolas
-        var font = $("body").css("font-family","Consolas");
+        var font = $("body,.typewrite").css("font-family","Consolas");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Consolas</span></i><br>';
         output(font2);
         break;
