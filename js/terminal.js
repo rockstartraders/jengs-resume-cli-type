@@ -112,7 +112,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'help':
         var help0 = '<br><center><i class="far fa-question-circle fa-5x"></i></center>';
         var help1 = '<center><p style="font-size:5vw";>Help</p></center><br>';
-        var result1 = '<span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>time</span>:&nbspTo view your time (system dependent)<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <span style=color:#3ed400;>Github Repo</span>.<br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know.<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>games</span>:&nbspPlay a game <br><span style=color:#3ed400;>resume-dl</span>:&nbspDownload my Resume<br><br>';
+        var result1 = '<span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>time</span>:&nbspTo view your time (system dependent)<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <span style=color:#3ed400;>Github Repo</span>.<br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know.<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>games</span>:&nbspPlay a game <br><span style=color:#3ed400;>resume-dl</span>:&nbspDownload my Resume<br><span style=color:#3ed400;>settings</span>:&nbspChange terminal Appearance<br><br>';
         output(help0 + help1 + result1);
         break;
 
@@ -181,6 +181,13 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          var inpormasyon1 = '<center><p style="font-size:5vw";>About</p></center><br>';
          var inpormasyon2 = '<br>I decided to use a terminal website simply because I am a <span style=color:#3ed400;>LINUX</span> fan boy, Is it obvious? Also I love the simplicy of a terminal it\'s easy to maintain and I can update it any time I wanted. I do know to how to create a GUI based website,<br>But believe it or not this is harder to build compare to a GUI one.<br><br> This website is a mix of js and jquery and html of course plus a bunch of "<span style=color:#3ed400;>case statements</span>". I\'am not a fan of UBUNTU but the color of unity is something very unique that is why i decided to use this color hex <span style=color:#3ed400;>#300A24</span> as my background.<br>';
          output( inpormasyon + inpormasyon1 + inpormasyon2 );
+         break;
+
+         case 'settings':
+         var settings = '<br><center><i class="fas fa-cog fa-5x"></i></center>';
+         var settings1 = '<center><p style="font-size:5vw";>Settings</p></center>';
+         var settings2 = '<br> Change The background color <br.';
+         output(settings + settings1 + settings2 );
          break;
 
         //case 'skills':
