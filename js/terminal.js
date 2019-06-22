@@ -441,72 +441,78 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
         case 'bg-default':  // Black
         var bg = $("*").css("background-color", "#300A24");
-        var bg2 =  '<br> Background color is changed to : Default<br>';
+        var bg2 =  '<br> Background color is changed to : <i><span style=color:#FFFFAF;>Default</span></i><br>';
         output(bg2);
         break;
 
         case 'bg-1':  // Black
         var bg = $("*").css("background-color", "#141414");
-        var bg2 =  '<br> Background color is changed to : Black<br>';
+        var bg2 =  '<br> Background color is changed to : <i><span style=color:#FFFFAF;>Black</span></i><br>';
         output(bg2);
         break;
 
 
         case 'bg-2': // Midnight Blue
         var bg = $("*").css("background-color", "#003366");
-        var bg2 =  '<br> Background color is changed to : Midnight Blue<br>';
+        var bg2 =  '<br> Background color is changed to : <i><span style=color:#FFFFAF;>Midnight Blue</span></i><br>';
         output(bg2);
         break;
 
         case 'bg-3':  //Base 03 Solarized
         var bg = $("*").css("background-color", "#002b36");
-        var bg2 =  '<br> Background color is changed to : Base 03 Solarized<br>';
+        var bg2 =  '<br> Background color is changed to : <i><span style=color:#FFFFAF;>Base 03 Solarized</span></i><br>';
         output(bg2);
         break;
 
         case 'bg-4':  //Solarized Grey
         var bg = $("*").css("background-color", "#263238");
-        var bg2 =  '<br> Background color is changed to : Material Grey<br>';
+        var bg2 =  '<br> Background color is changed to : <i><span style=color:#FFFFAF;>Material Grey</span></i><br>';
         output(bg2);
         break;
 
         case 'bg-5':  //Powershell
         var bg = $("*").css("background-color", "#012456");
-        var bg2 = '<br> Background color is changed to : Powershell<br>';
+        var bg2 = '<br> Background color is changed to : <i><span style=color:#FFFFAF;>Powershell</span></i><br>';
         output(bg2);
         break;
 
 
          // Settings for Font
 
+         case 'font-default':  //monospace
+         var font = $("*").css("font-family","Quango");
+         var font2 = '<br> Font-family is set to <i><span style=color:#FFFFAF;>default</span></i><br>';
+         output(font2);
+         break;
+
         case 'font-1':  //monospace
         var font = $("*").css("font-family","monospace");
-        var font2 = '<br> Font-family is changed to : Monospace<br>';
+        var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Monospace</span></i><br>';
         output(font2);
         break;
 
 
         case 'font-2':  //COURIER
         var font = $("*").css("font-family","Courier");
-        var font2 = '<br> Font-family is changed to : Courier<br>';
+        var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Courier</span></i><br>';
         output(font2);
         break;
 
         case 'font-3':  //IBM Plex Mono
         var font = $("*").css("font-family","IBM Plex Mono");
-        var font2 = '<br> Font-family is changed to : IBM Plex Mono<br>';
+        var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>IBM Plex Mono</span></i><br>';
         output(font2);
         break;
 
         case 'font-4':  //Segoe UI
         var font = $("*").css("font-family","Segoe UI");
-        var font2 = '<br> Font-family is changed to : Segoe UI<br>';
+        var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Segoe UI</span></i><br>';
         output(font2);
         break;
 
         case 'font-5':  //Consolas
         var font = $("*").css("font-family","Consolas");
-        var font2 = '<br> Font-family is changed to : Consolas<br>';
+        var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Consolas</span></i><br>';
         output(font2);
         break;
 
