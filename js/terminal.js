@@ -428,6 +428,15 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         output(audio2 + audio3 + audio4);
         break;
 
+        case 'rock':
+        var audio = new Audio('./music/rock.mp3');
+        var audio = audio.play();
+        var audio2 = '<br>Title:&nbspMy Playlist for Foreign Rock Music<br>';
+        var audio3 = 'By:&nbsp Various Rock Artist<br>';
+        var audio4 = 'Genre:&nbspForeign Rock<br>';
+        output(audio2 + audio3 + audio4);
+        break;
+
 
         // Download ng resume
         case 'resume-dl':
