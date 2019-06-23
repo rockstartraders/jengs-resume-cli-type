@@ -526,6 +526,20 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         break;
 
 
+        // Mock command
+
+        case 'ls':  //Consolas
+        var mock = '<br><span style=color:#3ed400;>ls </span>command : That means that you have knowledge in using <i><span style=color:#FFFFAF;>Unix/Linux</span></i>, but <span style=color:#3ed400;>ls</span> command is not applicable though. Type help instead.<br><br>';
+        output(mock);
+        break;
+
+        case 'pwd':  //Consolas
+        var mock = '<br><span style=color:#3ed400;>pwd </span>command : Stands for <i><span style=color:#FFFFAF;>Present Working Directory </span></i>, but this is not a terminal and <span style=color:#3ed400;>pwd </span> command is not applicable though. But I am sure you\'re inside my portfolio.<br>Please type help for options.<br><br>';
+        output(mock);
+        break;
+
+
+
         default:
         if (cmd) {
           eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('8(9+\': b 7 d \'+\'!\'+"<1>"+"6 3 4 5 a c m e."+"<1>"+" n o &2 \'<0 k=j:#f;>g</0>\' &2 h i l.")',25,25,'span|br|nbsp|Cannot|Recall|Creating|I|not|output|cmd||command|Command|found|That|32CD32|help|for|Further|color|style|Assistance|Like|Please|Type'.split('|'),0,{}));
