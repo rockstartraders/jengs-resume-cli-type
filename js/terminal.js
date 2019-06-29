@@ -489,69 +489,69 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          // Settings for Font
 
         case 'font-default':  //monospace
-        var font = $("body,.typewrite").css("font-family","Quango");
+        var font = $("body,.typewrite,#sulat").css("font-family","Quango");
         var font2 = '<br> Font-family is set to <i><span style=color:#FFFFAF;>default</span></i><br>';
         output(font2);
         break;
 
         case 'font-1':  //monospace
-        var font = $("body,.typewrite").css("font-family","monospace");
+        var font = $("body,.typewrite,#sulat").css("font-family","monospace");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Monospace</span></i><br>';
         output(font2);
         break;
 
 
         case 'font-2':  //COURIER
-        var font = $("body, .typewrite").css("font-family","Courier");
+        var font = $("body,.typewrite,#sulat").css("font-family","Courier");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Courier</span></i><br>';
         output(font2);
         break;
 
         case 'font-3':  //IBM Plex Mono
-        var font = $("body,.typewrite").css("font-family","IBM Plex Mono");
+        var font = $("body,.typewrite,#sulat").css("font-family","IBM Plex Mono");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>IBM Plex Mono</span></i><br>';
         output(font2);
         break;
 
         case 'font-4':  //Segoe UI
-        var font = $("body,.typewrite").css("font-family","Segoe UI");
+        var font = $("body,.typewrite,#sulat").css("font-family","Segoe UI");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Segoe UI</span></i><br>';
         output(font2);
         break;
 
         case 'font-5':  //Consolas
-        var font = $("body,.typewrite").css("font-family","Consolas");
+        var font = $("body,.typewrite,#sulat").css("font-family","Consolas");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Consolas</span></i><br>';
         output(font2);
         break;
 
         case 'font-6':  //Cinzel
-        var font = $("body,.typewrite").css("font-family","Cinzel");
+        var font = $("body,.typewrite,#sulat").css("font-family","Cinzel");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Cinzel</span></i><br>';
         output(font2);
         break;
 
 
         case 'font-7':  //Swanky and Moo Moo
-        var font = $("body,.typewrite").css("font-family","Swanky and Moo Moo");
+        var font = $("body,.typewrite,#sulat").css("font-family","Swanky and Moo Moo");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Swanky and Moo Moo</span></i><br>';
         output(font2);
         break;
 
         case 'font-8':  //Orbitron
-        var font = $("body,.typewrite").css("font-family","Orbitron");
+        var font = $("body,.typewrite,#sulat").css("font-family","Orbitron");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Orbitron</span></i><br>';
         output(font2);
         break;
 
         case 'font-9':  //Croissant One
-        var font = $("body,.typewrite").css("font-family","Croissant One");
+        var font = $("body,.typewrite,#sulat").css("font-family","Croissant One");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Croissant One</span></i><br>';
         output(font2);
         break;
 
         case 'font-10':  //Poppins
-        var font = $("body,.typewrite").css("font-family","Poppins");
+        var font = $("body,.typewrite,#sulat").css("font-family","Poppins");
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Poppins</span></i><br>';
         output(font2);
         break;
