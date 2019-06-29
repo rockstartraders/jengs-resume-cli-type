@@ -186,7 +186,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          case 'settings':
          var settings = '<br><center><i class="fas fa-cog fa-5x"></i></center>';
          var settings1 = '<center><p style="font-size:5vw";>Settings</p></center>';
-         var settings2 = '<br> To change the background color use the command :<span style=color:#3ed400;> bg-</span><i>Selected Option</i><br><br>Options:<br><span style=color:#3ed400;>default</span> : Default Color which is Unity<br><span style=color:#3ed400;>1</span> : Black <br><span style=color:#3ed400;>2</span> : Midnight Blue<br> <span style=color:#3ed400;>3</span> : Base 03 Solarized <br><span style=color:#3ed400;>4</span> : Material Grey <br><span style=color:#3ed400;>5</span> : Powershell<br><br>To change the font use the command :<span style=color:#3ed400;> font-</span><i>Selected Option</i><br><br>Options:<br><span style=color:#3ed400;>default</span> : Default font which is Quango<br><span style=color:#3ed400;>1</span> : Monospace <br><span style=color:#3ed400;>2</span> : Courier<br> <span style=color:#3ed400;>3</span> : IBM Plex Mono <br><span style=color:#3ed400;>4</span> : Segoe UI <br><span style=color:#3ed400;>5</span> : Consolas<br><br>';
+         var settings2 = '<br> To change the background color use the command :<span style=color:#3ed400;> bg-</span><i>Selected Option</i><br><br>Options:<br><span style=color:#3ed400;>default</span> : Default Color which is Unity<br><span style=color:#3ed400;>1</span> : Black <br><span style=color:#3ed400;>2</span> : Midnight Blue<br> <span style=color:#3ed400;>3</span> : Base 03 Solarized <br><span style=color:#3ed400;>4</span> : Material Grey <br><span style=color:#3ed400;>5</span> : Powershell<br><br>To change the font use the command :<span style=color:#3ed400;> font-</span><i>Selected Option</i><br><br>Options:<br><span style=color:#3ed400;>default</span> : Default font which is Quango<br><span style=color:#3ed400;>1</span> : Monospace <br><span style=color:#3ed400;>2</span> : Courier<br> <span style=color:#3ed400;>3</span> : IBM Plex Mono <br><span style=color:#3ed400;>4</span> : Segoe UI <br><span style=color:#3ed400;>5</span> : Consolas<br><span style=color:#3ed400;>6</span> : Cinzel<br><span style=color:#3ed400;>7</span> : Swanky and Moo Moo<br><span style=color:#3ed400;>8</span> : Orbitron<br><span style=color:#3ed400;>9</span> : Croissant One<br><span style=color:#3ed400;>10</span> : Poppins<br><br>';
          output(settings + settings1 + settings2 );
          break;
 
@@ -524,6 +524,38 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Consolas</span></i><br>';
         output(font2);
         break;
+
+        case 'font-6':  //Cinzel
+        var font = $("body,.typewrite").css("font-family","Cinzel");
+        var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Cinzel</span></i><br>';
+        output(font2);
+        break;
+
+
+        case 'font-7':  //Swanky and Moo Moo
+        var font = $("body,.typewrite").css("font-family","Swanky and Moo Moo");
+        var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Swanky and Moo Moo</span></i><br>';
+        output(font2);
+        break;
+
+        case 'font-8':  //Orbitron
+        var font = $("body,.typewrite").css("font-family","Orbitron");
+        var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Orbitron</span></i><br>';
+        output(font2);
+        break;
+
+        case 'font-9':  //Croissant One
+        var font = $("body,.typewrite").css("font-family","Croissant One");
+        var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Croissant One</span></i><br>';
+        output(font2);
+        break;
+
+        case 'font-10':  //Poppins
+        var font = $("body,.typewrite").css("font-family","Poppins");
+        var font2 = '<br> Font-family is changed to : <i><span style=color:#FFFFAF;>Poppins</span></i><br>';
+        output(font2);
+        break;
+
 
 
         // Mock command
