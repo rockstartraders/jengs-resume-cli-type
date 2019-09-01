@@ -110,23 +110,23 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
 
         case 'help':
-        var help0 = '<br><center><i class="far fa-question-circle fa-5x"></i></center>';
+        var help0 = '<br><center><i class="far fa-question-circle fa-7x"></i></center>';
         var help1 = '<center><p style="font-size:5vw";>Help</p></center><br>';
         var result1 = '<span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>time</span>:&nbspTo view your time (system dependent)<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <span style=color:#3ed400;>Github Repo</span>.<br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know.<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>games</span>:&nbspPlay a game <br><span style=color:#3ed400;>resume-dl</span>:&nbspDownload my Resume<br><span style=color:#3ed400;>settings</span>:&nbspChange terminal Appearance<br><br>';
         output(help0 + help1 + result1);
         break;
 
         case 'education':
-        var education = '<br><center><i class="fas fa-user-graduate fa-5x"></i></center>';
+        var education = '<br><center><i class="fas fa-user-graduate fa-7x"></i></center>';
         var education1 = '<center><p style="font-size:5vw";>Education</p></center><br>';
         var education2 = '<br>If you are looking for a B.S Graduate then my apologies but I\'m not the guy you are looking for.But if you need a person who do have a 10+ years knowledge and experience dealing with technical support issues and superb communication and customer service skills then, I may be the person you need. Lastly, If you need a person who spend his free time studying pentesting, programming and a linux lover at the same time for sure that\'s me.<br><br>Please feel free to contact me if I\'m the one you need.<br><br>';
         output(education + education1 + education2 );
         break;
 
         case 'programming':
-        var coding = '<br><br><center><i class="fas fa-terminal fa-5x"></i></center>';
+        var coding = '<br><br><center><i class="fas fa-terminal fa-7x"></i></center>';
         var coding1 = '<center><p style="font-size:5vw";>Programming</p></center><br>';
-        var coding2 = '<br><center>HTML, CSS, JAVASCRIPT and JQUERY <br> API’s and JSON<br>Bootstrap<br>REACT JS<br>VB.NET<br>JAVA<br>SQL<br>GIT<br>MARKDOWN (GitHub’s .MD modification)<br>Batch & Bash Scripting</center><br><br>';
+        var coding2 = '<br><center>HTML, CSS, JAVASCRIPT and JQUERY <br> API’s and JSON<br>Bootstrap<br>REACT JS<br>VB.NET<br>JAVA<br>SQL<br>GIT<br>Bash Scripting<br>MARKDOWN (GitHub’s .MD modification)<br></center><center>Python (In creating CLI tools with the help of a REST API)</center><br><center>Please see my <span style=color:#4183C4;>Github Repo</span> to view samples.</center><br>';
         output(coding + coding1 + coding2);
         break;
 
@@ -136,14 +136,14 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         break;
 
         case 'contact':
-         var libro = '<br><br><center><i class="fas fa-mobile-alt fa-5x"></i></center>';
+         var libro = '<br><br><center><i class="fas fa-mobile-alt fa-7x"></i></center>';
          var libro1 = '<center><p style="font-size:5vw";>Contact</p></center><br>';
          var result = "<p>My bad, but I decided to remove my contact information here. Due to the reason that I received tons of spam emails and multi-level marketing proposal in the past which I'm not really interested in. Please feel free to send me an email using the contact form that I created for this purpose.<br>Please type the command \"<span style=color:#32CD32;>mail</span>\" to get to that page.<br><br>Thank You.</p><br> ";
          output(libro + libro1 + result);
          break;
 
         case 'whoami':
-        var pagkakakilanlan = '<br><br><center><i class="far fa-id-card fa-5x"></i></center>';
+        var pagkakakilanlan = '<br><br><center><i class="far fa-id-card fa-7x"></i></center>';
         var result = '<br><center><p style="font-size:5vw";><span style=color:#FFFFAF;>JAMES PAUL ESPEÑA</p></center></span><br>';
         var resultas = 'About Me ? well I am currently working on an I.T outsourcing company in Manila. I do love my work but I also love<br>programming, I do freelance work sometimes, specially if it\'s my off wherein I develop small system for small company\'s or sometimes even personal use.<br><br>I preffer using vb.net for system development and html, css, js for basic website.My future plan is to study and master python because I know that you can build a lot of stuff using that programming langguage (even hacking tools YES).<br>I want study Cybersecurity too.See I want to do a lot of things but still I want to keep programming as part of my main arsenal.<br><br>How about you?<br>' ;
         output(pagkakakilanlan + result + resultas);
@@ -151,9 +151,9 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
         case 'github':
         var result = window.open('https://github.com/rockstartraders');
-        var result1 = '<br><center><i class="fab fa-github-alt fa-5x"></i></center>';
+        var result1 = '<br><center><span style=color:#4183C4;><i class="fab fa-github fa-7x"></i></span></center>';
         var result2 = '<center><p style="font-size:5vw";>Github</p></center><br>';
- 		    output(result1 + result2 + "Thank You So Much For Visiting My Github Page." + "<br>" + "Hope You Like It.");
+ 		    output(result1 + result2 + "Thank You So Much For Visiting My <span style=color:#4183C4;>Github Repo</span>" + "<br>");
  		    break;
 
         case 'time':
@@ -163,7 +163,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         break;
 
         case 'resume':
-        var profile = '<br><center><i class="fas fa-user-tie fa-5x"></i></center>';
+        var profile = '<br><center><i class="fas fa-user-tie fa-7x"></i></center>';
         var biodata = '<center><p style="font-size:5vw";>Resume</p></center><br>';
         var result = "My apoligies but I\'m not comfortable in providing my personal information specially online." + "<br>" + "But please feel free to email or contact me by typing the command  \t' mail ' . \t" + "<br>" + "And I will be glad to respond back to you and have my resume sent out when that happens.<br><br>";
         output( profile + biodata + result);
@@ -177,14 +177,14 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
   		  break;
 
         case 'about':
-         var inpormasyon = '<br><br><center><i class="fas fa-info fa-5x"></i></center>';
+         var inpormasyon = '<br><br><center><i class="fas fa-info fa-7x"></i></center>';
          var inpormasyon1 = '<center><p style="font-size:5vw";>About</p></center><br>';
          var inpormasyon2 = '<br>I decided to use a terminal website simply because I am a <span style=color:#3ed400;>LINUX</span> fan boy, Is it obvious? Also I love the simplicy of a terminal it\'s easy to maintain and I can update it any time I wanted. I do know to how to create a GUI based website,<br>But believe it or not this is harder to build compare to a GUI one.<br><br> This website is a mix of js and jquery and html of course plus a bunch of "<span style=color:#3ed400;>case statements</span>". I\'am not a fan of UBUNTU but the color of unity is something very unique that is why i decided to use this color hex <span style=color:#3ed400;>#300A24</span> as my background.<br>';
          output( inpormasyon + inpormasyon1 + inpormasyon2 );
          break;
 
          case 'settings':
-         var settings = '<br><center><i class="fas fa-cog fa-5x"></i></center>';
+         var settings = '<br><center><i class="fas fa-cog fa-7x"></i></center>';
          var settings1 = '<center><p style="font-size:5vw";>Settings</p></center>';
          var settings2 = '<br> To change the background color use the command :<span style=color:#3ed400;> bg-</span><i>Selected Option</i><br><br>Options:<br><span style=color:#3ed400;>default</span> : Default Color which is Unity<br><span style=color:#3ed400;>1</span> : Black <br><span style=color:#3ed400;>2</span> : Midnight Blue<br> <span style=color:#3ed400;>3</span> : Base 03 Solarized <br><span style=color:#3ed400;>4</span> : Material Grey <br><span style=color:#3ed400;>5</span> : Powershell<br><br>To change the font use the command :<span style=color:#3ed400;> font-</span><i>Selected Option</i><br><br>Options:<br><span style=color:#3ed400;>default</span> : Default font which is Quango<br><span style=color:#3ed400;>1</span> : Monospace <br><span style=color:#3ed400;>2</span> : Courier<br> <span style=color:#3ed400;>3</span> : IBM Plex Mono <br><span style=color:#3ed400;>4</span> : Segoe UI <br><span style=color:#3ed400;>5</span> : Consolas<br><span style=color:#3ed400;>6</span> : Cinzel<br><span style=color:#3ed400;>7</span> : Swanky and Moo Moo<br><span style=color:#3ed400;>8</span> : Orbitron<br><span style=color:#3ed400;>9</span> : Croissant One<br><span style=color:#3ed400;>10</span> : Poppins<br><br>';
          output(settings + settings1 + settings2 );
@@ -199,7 +199,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
 
 
           case 'games':
-          var gameinfo = '<br><br><center><i class="fas fa-gamepad fa-5x"></i></center>';
+          var gameinfo = '<br><br><center><i class="fas fa-gamepad fa-7x"></i></center>';
           var gameinfo1 = '<center><p style="font-size:5vw";>My Browser Games</p></center><br>';
           var gameinfo2 = "<center> I know this is not relevant but every once in a while, <br>I want to play something and the best option is to embed it to my website.<br><br></center>";
           var gameinfo22 = "<center><span style=color:#ff0000;>Note:</span> Flash Player is needed for this to work.<br>Not Applicable for Mobile.</center><br><br>";
@@ -269,7 +269,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
          case 'music':
          var musika = '<br><center><i class="fas fa-headphones-alt fa-5x"></i></center>';
          var musika1 = '<center><p style="font-size:5vw";>My Music</p></center><br>';
-         var result = " Music List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ] <br><br>fade-to-black<br>leave-out-all-the-rest<br>norem<br>cemetery-gates<br>sad-but-true<br>scars<br>the-same-love<br>wag-ka-naman<br>you-wanted-more<br>kung-ikay-akin<br>minsan<br>pag-asa<br>dalaga<br>balewala<br>wish<br>rock<br><br>There is no playback function included here, If you need to change the song or music please make sure to <br>refresh this website first because it wont stop automatically or just enjoy it, finish the whole song before playing a new one. I promise to fix this on my free time.<br><br>";
+         var result = " Music List [ <span style=color:#3ed400;>Type the string as is and enjoy</span> ] <br><br>fade-to-black<br>leave-out-all-the-rest<br>norem<br>cemetery-gates<br>sad-but-true<br>scars<br>the-same-love<br>wag-ka-naman<br>you-wanted-more<br>kung-ikay-akin<br>minsan<br>pag-asa<br>dalaga<br>balewala<br>pauwi-na-ako<br>wish<br>rock<br><br>There is no playback function included here, If you need to change the song or music please make sure to <br>refresh this website first because it wont stop automatically or just enjoy it, finish the whole song before playing a new one. I promise to fix this on my free time.<br><br>";
          output( musika + musika1 + result);
          break;
 
@@ -480,12 +480,12 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         break;
 
         case 'bg-5':  //Powershell
-        var bg = $("*").css("background-color", "#012456");
+        var bg = $("*").css("background-color", "#05264c");
         var bg2 = '<br> Background color is changed to : <i><span style=color:#FFFFAF;>Powershell</span></i><br>';
         output(bg2);
         break;
 
-
+      
          // Settings for Font
 
         case 'font-default':  //monospace
