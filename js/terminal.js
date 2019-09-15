@@ -112,14 +112,14 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'help':
         var help0 = '<br><center><i class="far fa-question-circle fa-7x"></i></center>';
         var help1 = '<center><p style="font-size:5vw";>Help</p></center><br>';
-        var result1 = '<span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>time</span>:&nbspTo view your time (system dependent)<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <span style=color:#3ed400;>Github Repo</span>.<br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know.<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>games</span>:&nbspPlay a game <br><span style=color:#3ed400;>resume-dl</span>:&nbspDownload my Resume<br><span style=color:#3ed400;>settings</span>:&nbspChange terminal Appearance<br><br>';
+        var result1 = '<span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>admin</span>:&nbspDisplay all my skills related to <span style=color:#FFFFAF;><i>Server Administration</i></span><br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <i><span style=color:#FFFFAF;>Github Repo</span></i><br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>games</span>:&nbspPlay a game <br><span style=color:#3ed400;>resume-dl</span>:&nbspDownload my Resume<br><span style=color:#3ed400;>settings</span>:&nbspChange terminal Appearance<br><br>';
         output(help0 + help1 + result1);
         break;
 
         case 'education':
         var education = '<br><center><i class="fas fa-user-graduate fa-7x"></i></center>';
         var education1 = '<center><p style="font-size:5vw";>Education</p></center><br>';
-        var education2 = '<br>If you are looking for a B.S Graduate then my apologies but I\'m not the guy you are looking for.But if you need a person who do have a 10+ years knowledge and experience dealing with technical support issues and superb communication and customer service skills then, I may be the person you need. Lastly, If you need a person who spend his free time studying pentesting, programming and a linux lover at the same time for sure that\'s me.<br><br>Please feel free to contact me if I\'m the one you need.<br><br>';
+        var education2 = '<br>If you are looking for a B.S Graduate then my apologies but I\'m not the guy you are looking for. But if you need a person who do have a 10+ years knowledge and experience dealing with technical support issues and superb communication and customer service skills then, I may be the person you need. Lastly, If you need a person who spend his free time studying pentesting, programming and a linux lover at the same time for sure that\'s me.<br><br>Please feel free to contact me if I\'m the one you need.<br><br>';
         output(education + education1 + education2 );
         break;
 
@@ -129,6 +129,14 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         var coding2 = '<br><center>HTML, CSS, JAVASCRIPT and JQUERY <br> API’s and JSON<br>Bootstrap<br>REACT JS<br>VB.NET<br>JAVA<br>SQL<br>GIT<br>Bash Scripting<br>MARKDOWN (GitHub’s .MD modification)<br></center><center>Python (In creating CLI tools with the help of a REST API)</center><br><center>Please see my <span style=color:#4183C4;>Github Repo</span> to view samples.</center><br>';
         output(coding + coding1 + coding2);
         break;
+
+        case 'admin':
+        var coding = '<br><br><center><i class="fas fa-server fa-7x"></i></center>';
+        var coding1 = '<center><p style="font-size:5vw";>Administration</p></center>';
+        var coding2 = '<br><center>DNS<br>DHCP<br>Windows Server 2012 and 2016<br>File Share and DFS (Distributed File System)<br>Server Deployment<br>Group Policy Object<br>Forest (New and Existing)<br>Remote Access and Connectivity<br>Virtualization (Hyper-V and VMware)<br>Active Directory (GROUPS, COMPUTERS, USERS and O.U’s)<br></center><br>';
+        output(coding + coding1 + coding2);
+        break;
+
 
         case 'interests':
         var result = "<h1 style=text-align:center;>Interests</h1>";
@@ -485,7 +493,7 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         output(bg2);
         break;
 
-      
+
          // Settings for Font
 
         case 'font-default':  //monospace
