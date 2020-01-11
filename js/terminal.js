@@ -112,8 +112,15 @@ var Terminal = Terminal || function(cmdLineContainer, outputContainer) {
         case 'help':
         var help0 = '<br><center><i class="far fa-question-circle fa-7x"></i></center>';
         var help1 = '<center><p style="font-size:5vw";>Help</p></center><br>';
-        var result1 = '<span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>admin</span>:&nbspDisplay all my skills related to <span style=color:#FFFFAF;><i>Server Administration</i></span><br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <i><span style=color:#FFFFAF;>Github Repo</span></i><br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>games</span>:&nbspPlay a game <br><span style=color:#3ed400;>resume-dl</span>:&nbspDownload my Resume<br><span style=color:#3ed400;>settings</span>:&nbspChange terminal Appearance<br><br>';
+        var result1 = '<span style=color:#3ed400;>help</span>:&nbspDisplay this menu<br><span style=color:#3ed400;>about</span>:&nbspDisplay the reason why i chose a terminal website<br><span style=color:#3ed400;>admin</span>:&nbspDisplay all my skills related to <span style=color:#FFFFAF;><i>Server Administration</i></span><br><span style=color:#3ed400;>whoami</span>:&nbspDisplay all my information<br><span style=color:#3ed400;>education</span>:&nbspDisplay all my information about my education<br><span style=color:#3ed400;>contact</span>:&nbspSay hello<br><span style=color:#3ed400;>clear</span>:&nbspClear terminal text<br><span style=color:#3ed400;>github</span>:&nbspWill redirect you to my <i><span style=color:#FFFFAF;>Github Repo</span></i><br><span style=color:#3ed400;>programming</span>:&nbspDisplay programming languages I know<br><span style=color:#3ed400;>resume-dl</span>:&nbspDownload my Resume<br><span style=color:#3ed400;>settings</span>:&nbspChange terminal Appearance<br><span style=color:#3ed400;>extra</span>:&nbspDisplay fancy programs<br><br>';
         output(help0 + help1 + result1);
+        break;
+            
+        case 'extra':
+        var extra = '<br><center><i class="far fa-smile-wink fa-7x"></i></center>';
+        var extra1 = '<center><p style="font-size:5vw";>Extra</p></center><br>';
+        var extra2 = '<br><span style=color:#3ed400;>music</span>:&nbspMy playlist and music<br><span style=color:#3ed400;>games</span>:&nbspPlay a game <br><br>';
+        output(extra + extra1 + extra2);
         break;
 
         case 'education':
